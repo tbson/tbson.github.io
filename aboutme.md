@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Tác giả
-subtitle: Đam mê công nghệ web
+title: Trần Bắc Sơn
+subtitle: Fullstack Web Developer
 ---
 
 My name is Inigo Montoya. I have the following qualities:
