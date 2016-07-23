@@ -39,6 +39,7 @@ Vậy là bất kỳ lúc nào người dùng vào địa chỉ _user1.somewebsi
 Hàm dưới đây viết bằng PHP dùng để phân giải xem domain mà người dùng vào là domain chính của website, subdomain hay domain riêng mà người dùng tự mua và trỏ tới hệ thống:
 
 ```php
+<?php
 public static function parseDomain(){
     $primaryDomain = \Config::get('app.domain'); # Laravel's config
     $currentDomain = $_SERVER['HTTP_HOST'];
