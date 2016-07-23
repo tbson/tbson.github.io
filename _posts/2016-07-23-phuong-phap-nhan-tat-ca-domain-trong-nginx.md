@@ -32,5 +32,5 @@ Với IP trên là IP của server bạn đang dùng.
 
 Hình minh hoạ dưới đây sử dụng dịch vụ Godaddy:
 
-![A record wildcard](/img/post/2016-07/23/a-record-wildcard.jpg)
+![A record wildcard](/img/posts/2016-07-23/a-record-wildcard.jpg)
 
