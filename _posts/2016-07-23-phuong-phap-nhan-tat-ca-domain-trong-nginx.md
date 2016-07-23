@@ -11,3 +11,26 @@ Trong các dự án liên quan đến vấn đề tạo website cho người dù
 
 1. URL trông đẹp và chuyên nghiệp.
 2. Dễ code (vì không phải làm việc nhiều với URL router).
+
+Khi sử dụng phương pháp subdomain thì bạn sẽ gặp một vấn đề là: Làm cách nào để tôi đăng ký 1 subdomain cho người dùng ngay khi họ vừa đăng ký tài khoản trên hệ thống của tôi.
+
+Câu trả lời có thể:
+
+1. Dùng API trỏ tới bên cung cấp domain để cấp phát mỗi khi có nhu cầu.
+2. Config server để nhận subdomain 1 cách chủ động.
+
+Rõ ràng cách 2 khả thi hơn.
+
+Ý tưởng của cách 2 này là: Bất cứ domain nào cũng có tính năng **Wildcard DNS record**
+Wildcard DNS record có nghĩa là bạn khai báo rằng mỗi khi ai đó nhập địa chỉ website chính của bạn, ví dụ như vào 1 subdomain mà bạn chưa định nghĩa thì hệ thống tự động redirect đến nơi mà Wildcard DNS record trỏ tới.
+
+Ví dụ: trong A records bạn thêm 1 record:
+
+**\*** trỏ tới **121.122.123.124**
+
+Với IP trên là IP của server bạn đang dùng.
+
+Hình minh hoạ dưới đây sử dụng dịch vụ Godaddy:
+
+![A record wildcard](/img/post/2016-07/23/a-record-wildcard.jpg)
+
