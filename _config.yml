@@ -41,7 +41,7 @@ avatar: "/img/avatar.jpg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Son Tran
-  email: "tbson87@gmail.com"
+  email: "mail@tbson.info"
   facebook: tranbacson  # eg. daattali
   github: tbson    # eg. daattali
   twitter: tranbacson   # eg. daattali
@@ -60,7 +60,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "tbson.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "tbson.info"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
