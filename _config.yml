@@ -43,9 +43,9 @@ author:
   email: "tbson87@gmail.com"
   facebook: tranbacson  # eg. daattali
   github: tbson    # eg. daattali
-  twitter: yourname   # eg. daattali
-  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: yourlink  # eg. "3943160/daattali"
+  twitter: tranbacson   # eg. daattali
+  linkedin: "https://vn.linkedin.com/in/son-tran-2a101829"  # eg. "pub/dean-attali/8/946/143"
+  stackoverflow: "1031889/ronin1184"  # eg. "3943160/daattali"
 
 # Select which links to show in the footer
 footer-links-active:
