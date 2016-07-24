@@ -5,7 +5,7 @@ subtitle: Cho phép người dùng sử dụng dịch vụ mà không cần conf
 bigimg: /img/posts/2016-07-23/domain-banner.jpg
 ---
 
-Trong các dự án liên quan đến vấn đề tạo website cho người dùng, một trong những vấn đề cơ bản là cho phép người dùng sử dụng website mà họ đã đăng ký mà không (hoặc chưa cần) domain riêng.
+**Trong các dự án liên quan đến vấn đề tạo website cho người dùng, một trong những vấn đề cơ bản là cho phép người dùng sử dụng website mà họ đã đăng ký mà không (hoặc chưa cần) domain riêng.**
 
 **Ví dụ**: Bạn xây dựng một dịch vụ tạo website hàng loạt cho các chuyên viên bất động sản để họ đăng ký vào tạo các website bất động sản. Domain của bạn là _somewebsite.com_ và người dùng sau khi đăng ký sẽ có 1 website dạng _user1.somewebsite.com_ hoặc _somewebsite.com/user1_. Dùng phương thức nào là tuỳ bạn nhưng theo kinh nghiệm làm các dự án loại này của tôi thì dùng subdomain có 2 ưu điểm:
 
