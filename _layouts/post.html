@@ -10,7 +10,7 @@ layout: base
       <article role="main" class="blog-post">
 	      {{ content }}
 	    </article>
-	  	  
+
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
@@ -23,12 +23,24 @@ layout: base
         </li>
         {% endif %}
       </ul>
-      
+
 	    {% if page.comments %}
         <div class="disqus-comments">
 	        {% include disqus.html %}
         </div>
 	    {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <table style="width: 100%">
+        <tr>
+          <td style="width: 100px">Left</td>
+          <td>
+            Right
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 </div>
