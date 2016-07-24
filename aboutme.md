@@ -20,4 +20,4 @@ Trần Bắc Sơn
 
 090.6696.527
 
-[mailto:mail@tbson.info](mail@tbson.info)
+[mail@tbson.info](mailto:mail@tbson.info)
