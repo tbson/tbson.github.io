@@ -16,8 +16,6 @@ Hỗ trợ doanh nghiệp vừa và nhỏ xây dựng các hệ thống quản l
 
 ** Nếu bạn có nhu cầu xây dựng / tư vấn hệ thống quản lý nội bộ (nhân sự / kế toán / sản xuất) thì hãy liên hệ với tôi sớm nhất có thể.
 
-Trần Bắc Sơn
-
-090.6696.527
-
-[mail@tbson.info](mailto:mail@tbson.info)
+* Trần Bắc Sơn
+* [090.6696.527](phone:+84906696527)
+* [mail@tbson.info](mailto:mail@tbson.info)
