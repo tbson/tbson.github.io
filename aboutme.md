@@ -14,7 +14,7 @@ Hỗ trợ doanh nghiệp vừa và nhỏ xây dựng các hệ thống quản l
 
 ### Thông tin liên hệ
 
-**Nếu bạn có nhu cầu xây dựng / tư vấn hệ thống quản lý nội bộ (nhân sự / kế toán / sản xuất) thì hãy liên hệ với tôi sớm nhất có thể.**
+**Nếu bạn có nhu cầu xây dựng / tư vấn hệ thống website/mobile thì hãy liên hệ với tôi sớm nhất có thể.**
 
 * Trần Bắc Sơn
 * 090.6696.527
