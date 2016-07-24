@@ -6,15 +6,10 @@ subtitle: Fullstack Web Developer
 
 Lập trình web/mobile là nguồn đam mê bất tận
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Hỗ trợ doanh nghiệp vừa và nhỏ xây dựng các hệ thống quản lý nội bộ web/mobile phù hợp nhất với nhu cầu của công ty.
 
 ### Triết lý cá nhân
 
-> Bất kỳ yêu cầu hợp lý nào của khách hàng cũng phải thực hiện được.
+> Bất kỳ yêu cầu hợp lý nào từ khách hàng đều phải được thực hiện.
 
-<!--
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
--->
+### Triết lý cá nhân
