@@ -11,7 +11,7 @@ Lập trình web/mobile là nguồn đam mê bất tận
 
 ### Triết lý cá nhân
 
-Bất kỳ yêu cầu hợp lý nào của khách hàng cũng phải thực hiện được.
+> Bất kỳ yêu cầu hợp lý nào của khách hàng cũng phải thực hiện được.
 
 <!--
 ### my history
