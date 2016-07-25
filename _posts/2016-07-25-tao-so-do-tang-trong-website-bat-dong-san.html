@@ -78,3 +78,65 @@ subtitle: Sơ đồ tầng động giúp tương tác với khách hàng tốt h
 		</div>
 	</div>
 </div>
+
+<h3>Cách thực hiện</h3>
+<p>
+	<strong>Phần HTML</strong>
+</p>
+<div class="language-php highlighter-rouge">
+	<pre class="highlight">
+
+		<img id="main-map" src="images/demo/xuanmai.jpg" style="width: 100%" usemap="#area"/>
+		<map name="area">
+		    <area name="a1" shape="poly" coords="125,50, 180,50, 180,168, 125,168, 125,110, 120,110, 120,80, 125,80" href="imgmap">
+		    <area name="a2" shape="poly" coords="181,50, 277,50, 277,119, 181,119" href="imgmap">
+		    <area name="a31" shape="poly" coords="296,56, 390,56, 390,119, 296,119" href="imgmap">
+		    <area name="a32" shape="poly" coords="390,56, 483,56, 483,119, 390,119" href="imgmap">
+		    <area name="a4" shape="poly" coords="502,62, 566,62, 566,101, 601,101, 601,118, 502,118" href="imgmap">
+		    <area name="a5" shape="poly" coords="566,62, 641,62, 656,78, 656,170, 600,170, 600,102, 566,102" href="imgmap">
+		    <area name="a6" shape="poly" coords="566,138, 601,138, 600,169, 656,169, 656,237, 601,237, 601,242, 566,242" href="imgmap">
+		    <area name="a71" shape="poly" coords="455,137, 547,137, 547,242, 488,242, 488,212, 455,212" href="imgmap">
+		    <area name="a72" shape="poly" coords="232,136, 324,136, 324,212, 292,212, 290,242, 232,242" href="imgmap">
+		    <area name="a8" shape="poly" coords="180,139, 213,139, 213,242, 178,242, 178,237, 123,237, 123,202, 118,202, 118,168, 180,168, " href="imgmap">
+		</map>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"></h4>
+					</div>
+					<div class="modal-body" style="padding: 0">
+
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators" id="indicators"></ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" id="slides" role="listbox"></div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</pre>
+</div>
+<p>
+	<strong>Phần Javascript</strong>
+</p>
+<div></div>
