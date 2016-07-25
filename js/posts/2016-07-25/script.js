@@ -1,4 +1,5 @@
-$(function(){
+window.onload = function(){
+        //do stuff here
 	var areas = [];
     var titles = {};
     var indicator = $("#indicators");
@@ -169,4 +170,4 @@ $(function(){
         	$("#myModal").modal();
         }
     });
-});
+};
