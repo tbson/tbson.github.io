@@ -83,8 +83,236 @@ subtitle: Sơ đồ tầng động giúp tương tác với khách hàng tốt h
 <p>
 	<strong>Phần HTML</strong>
 </p>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"main-map"</span> <span class="na">src=</span><span class="s">"/img/posts/2016-07-25/xuanmai.jpg"</span> <span class="na">style=</span><span class="s">"width: 100%"</span> <span class="na">usemap=</span><span class="s">"#area"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;map</span> <span class="na">name=</span><span class="s">"area"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a1"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"125,50, 180,50, 180,168, 125,168, 125,110, 120,110, 120,80, 125,80"</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a2"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"181,50, 277,50, 277,119, 181,119"</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a31"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"296,56, 390,56, 390,119, 296,119"</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a32"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"390,56, 483,56, 483,119, 390,119"</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a4"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"502,62, 566,62, 566,101, 601,101, 601,118, 502,118"</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a5"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"566,62, 641,62, 656,78, 656,170, 600,170, 600,102, 566,102"</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a6"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"566,138, 601,138, 600,169, 656,169, 656,237, 601,237, 601,242, 566,242"</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a71"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"455,137, 547,137, 547,242, 488,242, 488,212, 455,212"</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a72"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"232,136, 324,136, 324,212, 292,212, 290,242, 232,242"</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;area</span> <span class="na">name=</span><span class="s">"a8"</span> <span class="na">shape=</span><span class="s">"poly"</span> <span class="na">coords=</span><span class="s">"180,139, 213,139, 213,242, 178,242, 178,237, 123,237, 123,202, 118,202, 118,168, 180,168, "</span> <span class="na">href=</span><span class="s">"imgmap"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/map&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"myModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"myModalLabel"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-lg"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"myModalLabel"</span><span class="nt">&gt;&lt;/h4&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span> <span class="na">style=</span><span class="s">"padding: 0"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"carousel-example-generic"</span> <span class="na">class=</span><span class="s">"carousel slide"</span> <span class="na">data-ride=</span><span class="s">"carousel"</span><span class="nt">&gt;</span>
+                    <span class="c">&lt;!-- Indicators --&gt;</span>
+                    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"carousel-indicators"</span> <span class="na">id=</span><span class="s">"indicators"</span><span class="nt">&gt;&lt;/ol&gt;</span>
+
+                    <span class="c">&lt;!-- Wrapper for slides --&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-inner"</span> <span class="na">id=</span><span class="s">"slides"</span> <span class="na">role=</span><span class="s">"listbox"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+                    <span class="c">&lt;!-- Controls --&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"left carousel-control"</span> <span class="na">href=</span><span class="s">"#carousel-example-generic"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-slide=</span><span class="s">"prev"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-chevron-left"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"right carousel-control"</span> <span class="na">href=</span><span class="s">"#carousel-example-generic"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-slide=</span><span class="s">"next"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-chevron-right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Đóng<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+
 
 <p>
 	<strong>Phần Javascript</strong>
 </p>
-<div></div>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="c1">//do stuff here</span>
+    <span class="kd">var</span> <span class="nx">areas</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="kd">var</span> <span class="nx">titles</span> <span class="o">=</span> <span class="p">{};</span>
+    <span class="kd">var</span> <span class="nx">indicator</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#indicators"</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">slides</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#slides"</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a1'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn A1 (03)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;80.74m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ A1 (03)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-03-1.jpg'</span><span class="p">,</span>
+                <span class="s1">'xuanmai-03-2.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ số 03 (tầng 16 – tầng 33)'</span><span class="p">,</span>
+                <span class="s1">'Mặt bằng căn hộ số 03 (tầng 7 – tầng 15)'</span>
+            <span class="p">]</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a2'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn A2 (04)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;67.12m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ A2 (04)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-04-1.jpg'</span><span class="p">,</span>
+                <span class="s1">'xuanmai-04-2.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ số 04 (tầng 16 – tầng 33)'</span><span class="p">,</span>
+                <span class="s1">'Mặt bằng căn hộ số 04 (tầng 7 – tầng 15)'</span>
+            <span class="p">]</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a31'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn A3 (05)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;61.37m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ A3 (05)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-05-1.jpg'</span><span class="p">,</span>
+                <span class="s1">'xuanmai-05-2.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ số 05 (tầng 16 – tầng 33)'</span><span class="p">,</span>
+                <span class="s1">'Mặt bằng căn hộ số 05 (tầng 7 – tầng 15)'</span>
+            <span class="p">]</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a32'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn A3 (06)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;61.37m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ A3 (06)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-06-1.jpg'</span><span class="p">,</span>
+                <span class="s1">'xuanmai-06-2.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ số 06 (tầng 16 – tầng 33)'</span><span class="p">,</span>
+                <span class="s1">'Mặt bằng căn hộ số 06 (tầng 7 – tầng 15)'</span>
+            <span class="p">]</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a4'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn A4 (07)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;45.22m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ A4 (07)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-07-1.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ số 07 (tầng 16 – tầng 33)'</span>
+            <span class="p">]</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a5'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn 5A (08)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;75.90m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ 5A (08)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-08-1.jpg'</span><span class="p">,</span>
+                <span class="s1">'xuanmai-08-2.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ số 08 (tầng 7 – tầng 15)'</span><span class="p">,</span>
+                <span class="s1">'Mặt bằng căn hộ số 08 (tầng 16 – tầng 33)'</span>
+            <span class="p">]</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a6'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn A6 (09)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;76.29m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ A6 (09)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-09-1.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ số 09 (tầng 16 – tầng 33)'</span>
+            <span class="p">]</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a71'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn A7 (10)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;90.83m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ A7 (10)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-10-1.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ số 10 (tầng 7 – tầng 33)'</span>
+            <span class="p">]</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a72'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn A7 (01)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;90.69m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ A7 (01)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-01-1.jpg'</span><span class="p">,</span>
+                <span class="s1">'xuanmai-01-2.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ số 01 (tầng 16 – tầng 33)'</span><span class="p">,</span>
+                <span class="s1">'Mặt bằng căn hộ số 01 (tầng 7 – tầng 15)'</span>
+            <span class="p">]</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="s1">'a8'</span><span class="p">,</span>
+            <span class="na">tooltip</span><span class="p">:</span> <span class="s1">'&lt;strong&gt;Căn A8 (02)&lt;/strong&gt; &lt;br/&gt;Diện tích: &lt;em&gt;78.95m&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="s1">'Căn hộ A8 (02)'</span><span class="p">,</span>
+            <span class="na">slideImg</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'xuanmai-02-1.jpg'</span><span class="p">,</span>
+                <span class="s1">'xuanmai-02-2.jpg'</span>
+            <span class="p">],</span>
+            <span class="na">slideTitle</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s1">'Mặt bằng căn hộ tầng 16 – tầng 33'</span><span class="p">,</span>
+                <span class="s1">'Mặt bằng căn hộ số 02 (tầng 16 – tầng 33)'</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">data</span><span class="p">){</span>
+        <span class="nx">areas</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+            <span class="na">key</span><span class="p">:</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span><span class="p">,</span>
+            <span class="na">toolTip</span><span class="p">:</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">tooltip</span>
+        <span class="p">});</span>
+        <span class="nx">titles</span><span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span><span class="p">]</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#main-map'</span><span class="p">).</span><span class="nx">mapster</span><span class="p">({</span>
+        <span class="na">fillOpacity</span><span class="p">:</span> <span class="mf">0.4</span><span class="p">,</span>
+        <span class="na">fillColor</span><span class="p">:</span> <span class="s2">"d42e16"</span><span class="p">,</span>
+        <span class="na">stroke</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="na">strokeColor</span><span class="p">:</span> <span class="s2">"9edd34"</span><span class="p">,</span>
+        <span class="na">strokeOpacity</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">,</span>
+        <span class="na">strokeWidth</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+        <span class="na">singleSelect</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="na">mapKey</span><span class="p">:</span> <span class="s1">'name'</span><span class="p">,</span>
+        <span class="na">listKey</span><span class="p">:</span> <span class="s1">'name'</span><span class="p">,</span>
+        <span class="na">showToolTip</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="na">toolTipClose</span><span class="p">:</span> <span class="p">[</span><span class="s2">"tooltip-click"</span><span class="p">,</span> <span class="s2">"area-click"</span><span class="p">,</span> <span class="s2">"image-mouseout"</span><span class="p">],</span>
+        <span class="na">areas</span><span class="p">:</span> <span class="nx">areas</span><span class="p">,</span>
+        <span class="na">onClick</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">indicator</span><span class="p">.</span><span class="nx">empty</span><span class="p">();</span>
+            <span class="nx">slides</span><span class="p">.</span><span class="nx">empty</span><span class="p">();</span>
+
+            <span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="p">[];</span>
+            <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">data</span><span class="p">){</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span> <span class="o">==</span> <span class="nx">e</span><span class="p">.</span><span class="nx">key</span><span class="p">){</span>
+                    <span class="nx">item</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+                    <span class="k">break</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="k">in</span> <span class="nx">item</span><span class="p">.</span><span class="nx">slideImg</span><span class="p">){</span>
+                <span class="kd">var</span> <span class="nx">title</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">slideTitle</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span>
+                <span class="kd">var</span> <span class="nx">img</span> <span class="o">=</span> <span class="s1">'/img/posts/2016-07-25/'</span> <span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="nx">slideImg</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">j</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+                    <span class="nx">indicator</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">'&lt;li data-target="#carousel-example-generic" data-slide-to="0" class="active"&gt;&lt;/li&gt;'</span><span class="p">);</span>
+                    <span class="nx">slides</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">'&lt;div class="item active"&gt;&lt;img src="'</span> <span class="o">+</span> <span class="nx">img</span> <span class="o">+</span> <span class="s1">'"&gt;&lt;div class="carousel-caption"&gt;&lt;h3 style="color: black"&gt;'</span><span class="o">+</span> <span class="nx">title</span> <span class="o">+</span><span class="s1">'&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;'</span><span class="p">);</span>
+
+                <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+                    <span class="nx">indicator</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">'&lt;li data-target="#carousel-example-generic" data-slide-to="'</span> <span class="o">+</span> <span class="nx">j</span> <span class="o">+</span> <span class="s1">'"&gt;&lt;/li&gt;'</span><span class="p">);</span>
+                    <span class="nx">slides</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">'&lt;div class="item"&gt;&lt;img src="'</span> <span class="o">+</span> <span class="nx">img</span> <span class="o">+</span> <span class="s1">'"&gt;&lt;div class="carousel-caption"&gt;&lt;h3 style="color: black"&gt;'</span><span class="o">+</span> <span class="nx">title</span> <span class="o">+</span><span class="s1">'&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;'</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="nx">$</span><span class="p">(</span><span class="s2">"#myModalLabel"</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="nx">titles</span><span class="p">[</span><span class="nx">e</span><span class="p">.</span><span class="nx">key</span><span class="p">]);</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s2">"#myModal"</span><span class="p">).</span><span class="nx">modal</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">};</span>
+
+</code></pre>
+</div>
