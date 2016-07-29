@@ -33,7 +33,7 @@ Sau đó chỉ việc chạy lệnh `migrate` để hệ thống tạo bảng m�
 
 ## Setup service trên server (Centos 7 Linux):
 
-Tạo 1 bash script để tiện cho việc tái sử dụng khi dùng cho nhiều website:
+Tạo 1 bash script có tên là `laravel_queue` và đặt tại `/opt/scripts` để tiện cho việc tái sử dụng khi dùng cho nhiều website:
 
 ```bash
 #!/bin/bash
@@ -50,4 +50,24 @@ else
 fi
 ```
 
-`project1` và `project2` là các dự án Laravel có sử dụng chức năng gửi email bất đồng bộ. Giả sử app hiện tại của chúng ta là `project1`
+Cho script này quyền thực thi:
+
+```bash
+chmod +x /opt/scripts/laravel_queue
+```
+
+Giả sử các dự án Laravel được nằm tại foler `/opt/nginx` (bạn có thể thay đổi bất kỳ nơi nào bạn thấy thích hợp).
+
+`project1` và `project2` là folder chứa các dự án Laravel có sử dụng chức năng gửi email bất đồng bộ. Giả sử app hiện tại của chúng ta là `project1`
+
+Để tiện sử dụng, chúng ta sẽ set path cho scrip này để sau này chỉ việc gọi tên, không cần gọi đường dẫn.
+
+```bash
+vi /etc/bashrc
+```
+
+Với nội dung
+
+```bash
+export PATH=$PATH:/opt/scripts
+```
