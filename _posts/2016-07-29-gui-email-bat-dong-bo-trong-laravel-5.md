@@ -16,7 +16,7 @@ Dĩ nhiên là chúng ta sẽ quan tâm tới hàm gửi bất đồng bộ vì 
 1. Setup hàng đợi (queue)
 2. Setup service trên server để đảm đương hàng đợi này.
 
-##Setup hàng đợi:
+## Setup hàng đợi:
 Đầu tiên là vào file .env và khai báo
 
 ```
@@ -30,3 +30,4 @@ Sau đó chỉ việc chạy lệnh `migrate` để hệ thống tạo bảng m�
 ```
 ./artisan migrate
 ```
+## Setup service trên server (Centos 7 Linux):
