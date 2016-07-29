@@ -14,4 +14,19 @@ Dĩ nhiên là chúng ta sẽ quan tâm tới hàm gửi bất đồng bộ vì 
 Để sử dụng phương pháp gửi email này chúng ta cần setup 2 phần:
 
 1. Setup hàng đợi (queue)
-2. Setup service trên server để đảm đương vòng lặp này.
+2. Setup service trên server để đảm đương hàng đợi này.
+
+##Setup hàng đợi:
+Đầu tiên là vào file .env và khai báo
+
+```
+QUEUE_DRIVER=database
+```
+
+`database` là cách đơn giản nhất vì không phải setup gì thêm, chỉ việc tận dụng db có sẵn (chưa hỗ trợ NoSQL)
+
+Sau đó chỉ việc chạy lệnh `migrate` để hệ thống tạo bảng mặc định cho queue quy định trong `config/queue.php` là `jobs`.
+
+```
+./artisan migrate
+```
