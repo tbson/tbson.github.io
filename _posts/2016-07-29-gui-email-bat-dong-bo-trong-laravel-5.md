@@ -62,30 +62,12 @@ Giả sử các dự án Laravel được nằm tại foler `/opt/nginx` (bạn 
 
 `project1` và `project2` là folder chứa các dự án Laravel có sử dụng chức năng gửi email bất đồng bộ. Giả sử app hiện tại của chúng ta là `project1`
 
-Để tiện sử dụng, chúng ta sẽ set path cho scrip này để sau này chỉ việc gọi tên, không cần gọi đường dẫn.
-
-```bash
-vi /etc/bashrc
-```
-
-Với nội dung:
-
-```bash
-export PATH=$PATH:/opt/scripts
-```
-
-Kích hoạt script mới thêm vào:
-
-```bash
-source /etc/bashrc
-```
-
-Sau khi set path xong, sử dụng script này sẽ cực kì đơn giản.
+Sử dụng script này cực kì đơn giản.
 
 Ví dụ: kích hoạt hàng đợi cho dự án `project1`:
 
 ```
-laravel_queue project1
+/opt/scripts/laravel_queue project1
 ```
 
 Bước cuối cùng là tạo service
