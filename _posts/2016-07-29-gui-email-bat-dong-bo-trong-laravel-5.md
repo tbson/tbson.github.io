@@ -30,4 +30,24 @@ Sau đó chỉ việc chạy lệnh `migrate` để hệ thống tạo bảng m�
 ```
 ./artisan migrate
 ```
+
 ## Setup service trên server (Centos 7 Linux):
+
+Tạo 1 bash script để tiện cho việc tái sử dụng khi dùng cho nhiều website:
+
+```bash
+#!/bin/bash
+# Only approve list app below
+list_app=("project1" "project2")
+if [[ " ${list_app[@]} " =~ " $1 " ]];
+then
+    BASE_DIR="/opt/nginx/$1/"
+    ARTISAN_APP=$BASE_DIR"artisan"
+    cd $BASE_DIR
+    $ARTISAN_APP queue:listen
+else
+    echo 'No laravel app found.'
+fi
+```
+
+`project1` và `project2` là các dự án Laravel có sử dụng chức năng gửi email bất đồng bộ. Giả sử app hiện tại của chúng ta là `project1`
