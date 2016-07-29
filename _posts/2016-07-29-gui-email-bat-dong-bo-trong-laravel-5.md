@@ -9,6 +9,8 @@ bigimg: /img/posts/2016-07-29/banner.jpg
 
 Laravel cung cấp cho chúng ta 2 hàm gửi email có chức năng tương tự nhau, chỉ khác nhau ở điểm là 1 hàm gửi đồng bộ (chạy và chờ) và 1 hàm bất đồng bộ (chạy và quên luôn). Cả 2 hàm này đều có thể sử dụng callback để kiểm tra khi nào email gửi xong.
 
+2 hàm đó là: `Mail::send` và `Mail::queue`
+
 Dĩ nhiên là chúng ta sẽ quan tâm tới hàm gửi bất đồng bộ vì việc để người dùng đợi gửi email xong mới làm việc khác là rất dở về mặt UX.
 
 Để sử dụng phương pháp gửi email này chúng ta cần setup 2 phần:
@@ -66,8 +68,52 @@ Giả sử các dự án Laravel được nằm tại foler `/opt/nginx` (bạn 
 vi /etc/bashrc
 ```
 
-Với nội dung
+Với nội dung:
 
 ```bash
 export PATH=$PATH:/opt/scripts
 ```
+
+Kích hoạt script mới thêm vào:
+
+```bash
+source /etc/bashrc
+```
+
+Sau khi set path xong, sử dụng script này sẽ cực kì đơn giản.
+
+Ví dụ: kích hoạt hàng đợi cho dự án `project1`:
+
+```
+laravel_queue project1
+```
+
+Bước cuối cùng là tạo service
+
+Tạo file tên là `project1_queue.service` tại `/etc/systemd/system/`
+
+Với nội dung:
+
+```bash
+[Unit]
+Description=project1_queue daemon
+After=network.target
+[Service]
+User=root
+# Group=nginx
+WorkingDirectory=/opt/nginx/project1
+Environment=/usr/bin
+ExecStart=/opt/scripts/laravel_queue project1
+[Install]
+WantedBy=multi-user.target
+```
+
+Kích hoạt dịch vụ:
+
+```bash
+systemclt stat project1_queue.service
+```
+
+Dịch vụ này sẽ chạy ngầm và có chức năng tự restart nếu gặp bất kỳ lỗi gì để đảm bảo mail luôn được gửi.
+
+DONE
