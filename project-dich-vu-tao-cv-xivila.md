@@ -6,7 +6,7 @@ subtitle: XIVILA là dự án tạo CV tự động giúp người dùng tạo �
 
 **Dịch vụ XIVILA giúp mọi người tạo được các bản CV chuyên nghiệp, nhanh chóng và chính xác. Hiện tại có hỗ trợ 2 ngôn ngữ là tiếng Việt và tiếng Anh**
 
-**Các tính năng chính của XIVILA**
+### Các tính năng chính của XIVILA
 
 1. Cho phép đăng nhập/đăng ký bằng mạng xã hội (Linkedin, Facebook, G+).
 2. Tạo CV online.
@@ -17,5 +17,7 @@ subtitle: XIVILA là dự án tạo CV tự động giúp người dùng tạo �
 7. Gửi tin nhắn cho nhau.
 8. Bookmark lại các bài viết hoặc tài khoản mình quan tâm.
 9. Tạo website cá nhân dựa trên các thông tin về CV chính và blog. Người dùng có thể chọn nhiều mẫu website khác nhau. Hỗ trợ trỏ tên miền riêng.
+
+### Ảnh minh hoạ
 
 **Demo:** [https://xivila.com](https://xivila.com)
