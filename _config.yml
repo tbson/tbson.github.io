@@ -24,8 +24,8 @@ description: A virtual proof that tbson is awesome!
 
 # List of links in the navigation bar
 navbar-links:
-  Dự án tiêu biểu: "http://deanattali.com"
-  Resources:
+  # Dự án tiêu biểu: "http://deanattali.com"
+  Dự án tiêu biểu:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
