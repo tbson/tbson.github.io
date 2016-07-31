@@ -28,4 +28,28 @@ subtitle: XIVILA là dự án tạo CV tự động giúp người dùng tạo �
 
 ![Dịch vụ tạo CV XIVILA - trang profile](/img/pages/xivila-profile.jpg)
 
+**Trang blog**
+
+![Dịch vụ tạo CV XIVILA - trang blog](/img/pages/xivila-blog.jpg)
+
+**Trang tạo website**
+
+![Dịch vụ tạo CV XIVILA - trang tạo web cá nhân](/img/pages/xivila-personal-page.jpg)
+
+**Trang danh sách CV**
+
+![Dịch vụ tạo CV XIVILA - trang danh sách CV](/img/pages/xivila-cv-list.jpg)
+
+**Trang tạo CV**
+
+![Dịch vụ tạo CV XIVILA - trang tạo CV](/img/pages/xivila-cv-detail.jpg)
+
+**Trang note**
+
+![Dịch vụ tạo CV XIVILA - trang note](/img/pages/xivila-note.jpg)
+
+**Trang talks**
+
+![Dịch vụ tạo CV XIVILA - trang talks](/img/pages/xivila-talks.jpg)
+
 **Demo:** [https://xivila.com](https://xivila.com)
