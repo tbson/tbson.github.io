@@ -26,7 +26,7 @@ description: A virtual proof that tbson is awesome!
 navbar-links:
   # Dự án tiêu biểu: "http://deanattali.com"
   Dự án tiêu biểu:
-    - Dịch vụ tạo CV XIVILA: "porject-dich-vu-tao-cv-xivila"
+    - Dịch vụ tạo CV XIVILA: "project-dich-vu-tao-cv-xivila"
     - Hệ thống quản lý ghi số nước: "project-quan-ly-ghi-so-nuoc"
     - Hệ thống quản lý báo giá: "project-he-thong-quan-ly-bao-gia"
     - Hệ thống quản lý cty đa cấp: "project-he-thong-quan-ly-cty-da-cap"
