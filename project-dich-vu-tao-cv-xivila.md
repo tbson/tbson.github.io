@@ -20,4 +20,8 @@ subtitle: XIVILA là dự án tạo CV tự động giúp người dùng tạo �
 
 ### Ảnh minh hoạ
 
+**Trang chủ**
+
+![Dịch vụ tạo CV XIVILA](/img/pages/xivila-home.jpg)
+
 **Demo:** [https://xivila.com](https://xivila.com)
