@@ -26,7 +26,7 @@ description: A virtual proof that tbson is awesome!
 navbar-links:
   # Dự án tiêu biểu: "http://deanattali.com"
   Dự án tiêu biểu:
-    - Dự án 1: "_pages/du-an-1"
+    - Dự án 1: "du-an-1"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
   Tác giả: "aboutme"
