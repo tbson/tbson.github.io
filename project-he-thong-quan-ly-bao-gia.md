@@ -28,7 +28,7 @@ subtitle: Hệ thống giúp doanh nghiệp quản lý báo giá một cách hi�
 
 **Trang phân quyền tổng**
 
-![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/phan-quyen.jpg)
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/phan-quyen-tong.jpg)
 
 **Trang danh sách báo giá**
 
