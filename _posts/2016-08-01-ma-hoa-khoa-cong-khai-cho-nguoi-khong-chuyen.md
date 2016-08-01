@@ -48,7 +48,7 @@ Tại sao cô ta lại làm như vậy? Vì bất kì ai có chìa khoá công k
 
 Một anh chàng nào đó đưa cho tôi 1 chiếc hộp và nói rằng chiếc hộp này được Anna gửi tới. Tôi không tin anh ta. Vì vậy, tôi lấy chiếc chìa khoá công khai của Anna trong mớ khoá công khai tôi đang lưu giữ từ nhiều nguồn và thử cắm vào ổ khoá, xoay ngược chiều kim đồng hồ, chiếc hộp mở ra! Và tôi biết rằng chiếc hộp được khoá bằng chiếc chìa khoá bí mật của Anna vì chỉ mình cô ta có chiếc chìa khoá đó.
 
-Do đó tôi chắc chắn Anna đã bỏ tài liệu vào chiếc hộp đó. Chúng ta gọi đó là **"chữ ký số"**.
+Do đó tôi chắc chắn Anna đã bỏ tài liệu vào chiếc hộp đó. Chúng ta gọi đó là **"chữ ký số(digital signature)"**.
 
 
 ### Chìa khoá là những con số
@@ -57,6 +57,6 @@ Trong thế giới máy tính "chìa khoá" chỉ là các con số - một chu�
 
 Nếu ai đó, kể cả bạn mã hoá thông tin nào đó bằng khoá công khai của bạn thì chỉ có mỗi mình bạn có thể giải mã thông tin đó bằng khoá bí mật của mình.
 
-Nếu bạn mã hoá thông tin nào đó bằng khoá bí mật của mình thì bất cứ ai muốn đọc đều phải giải mã thông tin đó bằng khoá công khai của bạn. Điều đó chứng minh là bạn đã mã hoá nó. Điều đó có ý nghĩa là bạn đã **"ký điện tử"** vào thông tin đó.
+Nếu bạn mã hoá thông tin nào đó bằng khoá bí mật của mình thì bất cứ ai muốn đọc đều phải giải mã thông tin đó bằng khoá công khai của bạn. Điều đó chứng minh là bạn đã mã hoá nó. Điều đó có ý nghĩa là bạn đã **"ký điện tử"(digitally signed)** vào thông tin đó.
 
 Nguồn: [https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/](https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/)
