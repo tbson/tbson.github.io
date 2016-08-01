@@ -4,7 +4,7 @@ title: Hệ thống quản lý báo giá
 subtitle: Hệ thống giúp doanh nghiệp quản lý báo giá một cách hiệu quả. Từ việc quản lý đầu vào sản phẩm, các phụ kiện, điều kiện, công thức tính giá... cho đến việc xuất ra một bản báo giá đúng chuẩn và chuyên nghiệp.
 ---
 
-** Các doanh nghiệp sản xuất luôn có nhu cầu tạo và quản lý báo giá một cách hiệu quả. Phương pháp truyền thống là sử dụng excel để tạo và lưu trữ. Nhưng dùng excel luôn bộc lộ nhiều khuyết điểm về bảo mật, phân quyền, tính linh hoạt, tìm kiếm... Khi sử dụng dịch vụ tạo CV trên nền web đã khắc phục được các nhược điểm đó. **
+**Các doanh nghiệp sản xuất luôn có nhu cầu tạo và quản lý báo giá một cách hiệu quả. Phương pháp truyền thống là sử dụng excel để tạo và lưu trữ. Nhưng dùng excel luôn bộc lộ nhiều khuyết điểm về bảo mật, phân quyền, tính linh hoạt, tìm kiếm... Khi sử dụng dịch vụ tạo CV trên nền web đã khắc phục được các nhược điểm đó.**
 
 ### Các tính năng chính
 
