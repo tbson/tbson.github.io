@@ -17,3 +17,23 @@ subtitle: Hệ thống giúp doanh nghiệp quản lý báo giá một cách hi�
 7. Quản lý danh sách khách hàng.
 
 ### Ảnh minh hoạ
+
+**Trang danh sách admin**
+
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-danh-sach-admin.jpg)
+
+**Trang phân quyền admin**
+
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-phan-quyen-admin.jpg)
+
+**Trang phân quyền tổng**
+
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-phan-quyen.jpg)
+
+**Trang danh sách báo giá**
+
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-danh-sach-bao-gia.jpg)
+
+**Trang chỉnh sửa báo giá**
+
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-chinh-sua-bao-gia.jpg)
