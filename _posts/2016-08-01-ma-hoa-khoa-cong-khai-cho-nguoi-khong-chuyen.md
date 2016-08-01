@@ -20,4 +20,4 @@ Bây giờ, chúng ta hãy xem mã hoá khoá công khai (bất đối xứng) h
 
 Hã tưởng tượng Anna cũng có 1 cái hộp nhưng cái hộp này có 1 ổ khoá rất đặc biệt.
 
-![Mã khoá khoá công khai](/img/2016-08-01/lock.jpg)
+![Mã khoá khoá công khai](/img/posts/2016-08-01/lock.jpg)
