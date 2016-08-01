@@ -20,20 +20,20 @@ subtitle: Hệ thống giúp doanh nghiệp quản lý báo giá một cách hi�
 
 **Trang danh sách admin**
 
-![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-danh-sach-admin.jpg)
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/danh-sach-admin.jpg)
 
 **Trang phân quyền admin**
 
-![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-phan-quyen-admin.jpg)
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/phan-quyen-admin.jpg)
 
 **Trang phân quyền tổng**
 
-![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-phan-quyen.jpg)
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/phan-quyen.jpg)
 
 **Trang danh sách báo giá**
 
-![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-danh-sach-bao-gia.jpg)
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/danh-sach-bao-gia.jpg)
 
 **Trang chỉnh sửa báo giá**
 
-![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/quotation-chinh-sua-bao-gia.jpg)
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/quotation/chinh-sua-bao-gia.jpg)
