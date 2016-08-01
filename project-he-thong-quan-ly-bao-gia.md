@@ -19,21 +19,16 @@ subtitle: Hệ thống giúp doanh nghiệp quản lý báo giá một cách hi�
 ### Ảnh minh hoạ
 
 **Trang danh sách admin**
-
 ![Hệ thống quản lý báo giá - danh sách admin](/img/pages/quotation/danh-sach-admin.jpg)
 
 **Trang phân quyền admin**
-
 ![Hệ thống quản lý báo giá - phân quyền admin](/img/pages/quotation/phan-quyen-admin.jpg)
 
 **Trang phân quyền tổng**
-
 ![Hệ thống quản lý báo giá - phân quyền tổng](/img/pages/quotation/phan-quyen-tong.jpg)
 
 **Trang danh sách báo giá**
-
 ![Hệ thống quản lý báo giá - danh sách báo giá](/img/pages/quotation/danh-sach-bao-gia.jpg)
 
 **Trang chỉnh sửa báo giá**
-
 ![Hệ thống quản lý báo giá - chỉnh sửa báo giá](/img/pages/quotation/chinh-sua-bao-gia.jpg)
