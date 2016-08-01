@@ -22,34 +22,34 @@ subtitle: XIVILA là dự án tạo CV tự động giúp người dùng tạo �
 
 **Trang chủ**
 
-![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/xivila-home.jpg)
+![Dịch vụ tạo CV XIVILA - trang chủ](/img/pages/xivila/xivila-home.jpg)
 
 **Trang profile sau khi đăng nhập**
 
-![Dịch vụ tạo CV XIVILA - trang profile](/img/pages/xivila-profile.jpg)
+![Dịch vụ tạo CV XIVILA - trang profile](/img/pages/xivila/xivila-profile.jpg)
 
 **Trang blog**
 
-![Dịch vụ tạo CV XIVILA - trang blog](/img/pages/xivila-blog.jpg)
+![Dịch vụ tạo CV XIVILA - trang blog](/img/pages/xivila/xivila-blog.jpg)
 
 **Trang tạo website**
 
-![Dịch vụ tạo CV XIVILA - trang tạo web cá nhân](/img/pages/xivila-personal-page.jpg)
+![Dịch vụ tạo CV XIVILA - trang tạo web cá nhân](/img/pages/xivila/xivila-personal-page.jpg)
 
 **Trang danh sách CV**
 
-![Dịch vụ tạo CV XIVILA - trang danh sách CV](/img/pages/xivila-cv-list.jpg)
+![Dịch vụ tạo CV XIVILA - trang danh sách CV](/img/pages/xivila/xivila-cv-list.jpg)
 
 **Trang tạo CV**
 
-![Dịch vụ tạo CV XIVILA - trang tạo CV](/img/pages/xivila-cv-detail.jpg)
+![Dịch vụ tạo CV XIVILA - trang tạo CV](/img/pages/xivila/xivila-cv-detail.jpg)
 
 **Trang note**
 
-![Dịch vụ tạo CV XIVILA - trang note](/img/pages/xivila-note.jpg)
+![Dịch vụ tạo CV XIVILA - trang note](/img/pages/xivila/xivila-note.jpg)
 
 **Trang talks**
 
-![Dịch vụ tạo CV XIVILA - trang talks](/img/pages/xivila-talks.jpg)
+![Dịch vụ tạo CV XIVILA - trang talks](/img/pages/xivila/xivila-talks.jpg)
 
 **Demo:** [https://xivila.com](https://xivila.com)
