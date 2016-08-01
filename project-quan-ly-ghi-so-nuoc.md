@@ -22,7 +22,7 @@ subtitle: Cán bộ ghi nước dùng app di động để ghi số nước, ch�
 
 **[Mobile] Danh sách khách hàng**
 
-![Quản lý ghi số nước - danh sách khách hàng](/img/pages/water/water-danh-sach-khach-hang.jpg)
+![Quản lý ghi số nước - danh sách khách hàng](/img/pages/water/water-danh-sach-kh.jpg)
 
 **[Mobile] Ghi thông tin**
 
