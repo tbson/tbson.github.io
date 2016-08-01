@@ -58,3 +58,5 @@ Trong thế giới máy tính "chìa khoá" chỉ là các con số - một chu�
 Nếu ai đó, kể cả bạn mã hoá thông tin nào đó bằng khoá công khai của bạn thì chỉ có mỗi mình bạn có thể giải mã thông tin đó bằng khoá bí mật của mình.
 
 Nếu bạn mã hoá thông tin nào đó bằng khoá bí mật của mình thì bất cứ ai muốn đọc đều phải giải mã thông tin đó bằng khoá công khai của bạn. Điều đó chứng minh là bạn đã mã hoá nó. Điều đó có ý nghĩa là bạn đã "ký điện tử" vào thông tin đó.
+
+Nguồn: [https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/](https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/)
