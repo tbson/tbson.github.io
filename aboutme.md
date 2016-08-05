@@ -8,7 +8,13 @@ Lập trình web/mobile là nguồn đam mê bất tận
 
 Hỗ trợ doanh nghiệp vừa và nhỏ xây dựng các hệ thống quản lý nội bộ web/mobile phù hợp nhất với nhu cầu của công ty.
 
-### Triết lý cá nhân
+### Thế mạnh & kinh nghiệm:
+
+1. Hệ thống webapp quản lý nội bộ như quản lý nhân sự, quản lý sản xuất, thống kê.
+2. Hệ thống kế toán quy mô nhỏ và có yêu cầu đặc thù.
+3. Hệ thống webapp yêu cầu nhiều tương tác với người dùng.
+
+### Triết lý cá nhân:
 
 > Bất kỳ yêu cầu hợp lý nào từ khách hàng đều phải được thực hiện.
 
