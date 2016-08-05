@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Trần Bắc Sơn
-subtitle: Fullstack Web Developer
+subtitle: Fullstack Web/Mobile Developer
 ---
-
-Lập trình web/mobile là nguồn đam mê bất tận
 
 Hỗ trợ doanh nghiệp vừa và nhỏ xây dựng các hệ thống quản lý nội bộ web/mobile phù hợp nhất với nhu cầu của công ty.
 
