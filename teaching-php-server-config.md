@@ -57,6 +57,8 @@ và IP trong trường hợp này là `192.168.1.45`
 
 Khi truy cập bằng trình duyệt và thấy hiện ra dòng chữ: **Welcome to nginx!** thì xem như xong 2 bước.
 
+## Bước 2: Config Nginx
+
 Để test PHP chạy được trên server chưa thì ta sẽ thực hiện các bước sau:
 
 **Tạo folder chứa source code:**
@@ -80,15 +82,48 @@ echo "<h1>Hello world</h1>";
 sudo vim /etc/hosts
 ```
 
+Nếu bạn đang dùng Windows thì có thể tham khảo tại [đây](https://support.rackspace.com/how-to/modify-your-hosts-file/)
+
 với nội dung:
 
 ```
 192.168.1.45        9gag.dev
 ```
 
-Sửa thêm cấu hình cho dự án 9gag (ai làm dự án đặc sản thì dùng dacsac)
+**Lưu ý:** Phần trỏ domain này là thao tác trên máy thật chứ ko phải máy ảo.
 
-## Bước 2: Config Nginx
+**Tạo file cấu hình Nginx cho dự án mới**
+
+sudo vim /etc/nginx/sites-enabled/default
+
+thêm nội dung:
+
+```
+server {
+    listen 80;
+    server_name 9gag.dev;
+
+    root /opt/web/9gag;
+    index index.php index.html;
+
+    location / {
+    	try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+    }
+}
+```
+
+Restart lại Nginx:
+
+```bash
+sudo systemctl reload nginx
+```
+
+Bây giờ bạn vào địa chỉ `http://9gag.dev` và sẽ thấy dòng `Hello world`
 
 ## Bước 3: Cài và config Postgres
 
