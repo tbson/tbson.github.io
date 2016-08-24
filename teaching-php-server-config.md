@@ -55,9 +55,9 @@ RX bytes:6887075 (6.8 MB)  TX bytes:311339 (311.3 KB)
 
 và IP trong trường hợp này là `192.168.1.45`
 
-Khi truy cập bằng trình duyệt và thấy hiện ra dòng chữ: **Welcome to nginx!** thì xem như xong 2 bước.
+Khi truy cập bằng trình duyệt và thấy hiện ra dòng chữ: **Welcome to nginx!** thì xem như xong bước 1.
 
-## Bước 2: Config Nginx
+## Bước 2: Test/Config Nginx
 
 Để test PHP chạy được trên server chưa thì ta sẽ thực hiện các bước sau:
 
@@ -126,6 +126,32 @@ sudo systemctl reload nginx
 Bây giờ bạn vào địa chỉ `http://9gag.dev` và sẽ thấy dòng `Hello world`
 
 ## Bước 3: Cài và config Postgres
+
+**Cài Postgres:**
+
+```bash
+sudo apt-get install postgresql postgresql-contrib php-pgsql
+```
+
+**Test Postgres:**
+
+```bash
+sudo -i -u postgres
+psql
+```
+
+Nếu output ra dạng như sau là ok:
+
+```
+psql (9.5.3)
+Type "help" for help.
+```
+
+**Config Postgres:**
+
+
+
+
 
 ## Bước 4: Config samba (dành cho máy ảo)
 
