@@ -149,9 +149,24 @@ Type "help" for help.
 
 **Config Postgres:**
 
+Tạo thêm 1 tài khoản người dùng cho Postgres
 
+```bash
+sudo -i -u postgres
+createuser someuser
+psql
+ALTER USER someuser WITH PASSWORD 'somepassword';
+\q
+exit
+```
 
+Tạo database để dùng cho dự án mới
 
+```bash
+sudo -i -u postgres
+createdb -O someuser 9gag
+exit
+```
 
 ## Bước 4: Config samba (dành cho máy ảo)
 
