@@ -5,3 +5,5 @@ subtitle: Thực hành 2 dự án bằng PHP bao gồm trang web dạng 9gag và
 ---
 
 **Mục lục:**
+
+1. Cài môi trường phát triển trên Ubuntu server 16.04
