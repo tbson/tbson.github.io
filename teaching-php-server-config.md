@@ -194,5 +194,15 @@ Restart lại Postgres:
 sudo service postgresql restart
 ```
 
+Sau đó các bạn có thể dùng [Valentina Studio](http://www.valentina-db.com/en/valentina-studio-overview) để truy cập và quản lý database của mình.
+
+Chọn **Connect to** hoặc **Add Bookmark**
+
+![Connect to](/img/pages/teaching-php/server-config/valentina-1.png)
+
+Điền thông tin
+
+![Điền thông tin](/img/pages/teaching-php/server-config/valentina-2.png)
+
 ## Bước 4: Config samba (dành cho máy ảo)
 
