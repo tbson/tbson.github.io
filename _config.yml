@@ -25,6 +25,8 @@ description: A virtual proof that tbson is awesome!
 # List of links in the navigation bar
 navbar-links:
   # Dự án tiêu biểu: "http://deanattali.com"
+  Đào tạo:
+    - PHP: "teaching-php"
   Dự án tiêu biểu:
     - Dịch vụ tạo CV XIVILA: "project-dich-vu-tao-cv-xivila"
     - Hệ thống quản lý ghi số nước: "project-quan-ly-ghi-so-nuoc"
