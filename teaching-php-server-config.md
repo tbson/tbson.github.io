@@ -168,5 +168,31 @@ createdb -O someuser 9gag
 exit
 ```
 
+Config cho phép truy cập/quản lý Postgres từ bên ngoài (**Chỉ áp dụng cho máy ảo**)
+
+```
+sudo vim /etc/postgresql/9.5/main/postgresql.conf
+```
+
+Sửa `# listen_addresses = 'localhost'` thành `listen_addresses = '8'`
+
+```
+sudo vim vim /etc/postgresql/9.5/main/pg_hba.conf
+```
+
+Thêm dòng
+
+```
+host    all             all             192.168.1.20/24            md5
+```
+
+Với `192.168.1.20` là địa chỉ IP của máy thật
+
+Restart lại Postgres:
+
+```
+sudo service postgresql restart
+```
+
 ## Bước 4: Config samba (dành cho máy ảo)
 
