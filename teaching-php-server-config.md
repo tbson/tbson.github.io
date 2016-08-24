@@ -11,8 +11,17 @@ subtitle: Config server là 1 kỹ năng không thể thiếu cho 1 full stack w
 Để chạy được PHP khi truy cập server bằng trình duyệt, chúng ta cần cài 1 web server là Nginx và gói php-fpm để chạy PHP trên nginx.
 
 ```bash
-apt-get install nginx php php-fpm
+sudo apt-get update
+sudo apt-get install nginx php php-fpm
 ```
+
+Config php.ini
+
+```bash
+sudo vim /etc/php/7.0/fpm/php.ini
+```
+
+Chuyển `;cgi.fix_pathinfo=1 thành `cgi.fix_pathinfo=0`
 
 Test xem PHP đã được cài đúng chưa:
 
@@ -45,6 +54,11 @@ RX bytes:6887075 (6.8 MB)  TX bytes:311339 (311.3 KB)
 ```
 
 và IP trong trường hợp này là `192.168.1.45`
+
+Khi truy cập bằng trình duyệt và thấy hiện ra dòng chữ: **Welcome to nginx!** thì xem như xong 2 bước.
+
+Để test PHP chạy được trên server chưa thì ta sẽ thực hiện các bước sau:
+
 
 ## Bước 2: Config Nginx
 
