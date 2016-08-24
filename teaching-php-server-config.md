@@ -11,3 +11,6 @@ subtitle: Config server là 1 kỹ năng không thể thiếu cho 1 full stack w
 ## Bước 2: Config Nginx
 
 ## Bước 3: Cài và config Postgres
+
+## Bước 4: Config samba (dành cho máy ảo)
+
