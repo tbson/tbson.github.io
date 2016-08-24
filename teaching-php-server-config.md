@@ -59,6 +59,34 @@ Khi truy cập bằng trình duyệt và thấy hiện ra dòng chữ: **Welcome
 
 Để test PHP chạy được trên server chưa thì ta sẽ thực hiện các bước sau:
 
+**Tạo folder chứa source code:**
+
+```bash
+sudo mkdir /opt/web
+sudo chmod 777 /opt/web
+mkdir /opt/web/9gag
+vim /opt/web/9gag/index.php
+```
+
+với nội dung:
+
+```PHP
+<?php
+echo "<h1>Hello world</h1>";
+```
+**Trỏ domain tới IP máy ảo hoặc 127.0.0.1 nếu cài trực tiếp trên máy thật linux:**
+
+```bash
+sudo vim /etc/hosts
+```
+
+với nội dung:
+
+```
+192.168.1.45        9gag.dev
+```
+
+Sửa thêm cấu hình cho dự án 9gag (ai làm dự án đặc sản thì dùng dacsac)
 
 ## Bước 2: Config Nginx
 
