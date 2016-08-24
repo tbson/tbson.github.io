@@ -8,6 +8,12 @@ subtitle: Config server là 1 kỹ năng không thể thiếu cho 1 full stack w
 
 ## Bước 1: cài Nginx, PHP7, php-fpm
 
+Để chạy được PHP khi truy cập server bằng trình duyệt, chúng ta cần cài 1 web server là Nginx và gói php-fpm để chạy PHP trên nginx.
+
+```bash
+apt-get install nginx php php-fpm
+```
+
 ## Bước 2: Config Nginx
 
 ## Bước 3: Cài và config Postgres
