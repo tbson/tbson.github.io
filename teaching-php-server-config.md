@@ -64,10 +64,10 @@ Khi truy cập bằng trình duyệt và thấy hiện ra dòng chữ: **Welcome
 **Tạo folder chứa source code:**
 
 ```bash
-sudo mkdir /opt/web
-sudo chmod 777 /opt/web
-mkdir /opt/web/9gag
-vim /opt/web/9gag/index.php
+sudo mkdir /opt/nginx
+sudo chmod 777 /opt/nginx
+mkdir /opt/nginx/9gag
+vim /opt/nginx/9gag/index.php
 ```
 
 với nội dung:
@@ -103,7 +103,7 @@ server {
     listen 80;
     server_name 9gag.dev;
 
-    root /opt/web/9gag;
+    root /opt/nginx/9gag;
     index index.php index.html;
 
     location / {
@@ -206,3 +206,57 @@ Chọn **Connect to** hoặc **Add Bookmark**
 
 ## Bước 4: Config samba (dành cho máy ảo)
 
+Bước này dùng để mount folder chứa source code trên server máy ảo về máy thật để thao tác trực tiếp. Không cần phải code local xong đưa lên server máy ảo để test.
+
+**Cài Samba**
+
+```
+sudo apt-get install samba
+```
+
+**Set password cho Samba user**
+
+Vì samba dùng cùng hệ thống user của Ubuntu nhưng khác hệ thống password nên ta cần set lại để sử dụng cho Samba. Có thể set giống với mật khẩu user trên Ubuntu để tiện nhớ
+
+```
+sudo someuser -a somepassword
+```
+
+**Lưu ý:** `someuser` phải là tài khoản đã được tạo sẵn của Ubuntu
+
+Config Samba:
+
+Backup file config cũ:
+
+```
+sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
+```
+
+Sửa file config
+
+```
+sudo vim /etc/samba/smb.conf
+```
+
+Thêm vào:
+
+```
+[nginx]
+path = /opt/nginx
+valid users = someuser
+read only = no
+```
+
+Restart Samba:
+
+```
+sudo service smbd restart
+```
+
+Sau đó bạn có thể mount folder nginx chứa source code tại địa chỉ `192.168.1.45/nginx` với `192.168.1.45` là IP của máy ảo, user name và mật khẩu được định nghĩa ở trên.
+
+Đối với Windows có thể dùng chức năng map network drive để mount.
+
+Đối với Mac/Linux có thể dùng chức năng Connect to server để mount.
+
+DONE!
