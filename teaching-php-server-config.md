@@ -7,7 +7,7 @@ share-img: /img/pages/teaching-php/server-config/thumbnail.jpg
 
 **Bài viết này không bao gồm hướng dẫn chi tiết cài Ubuntu trên (máy thật hoặc máy ảo)**
 
-Trong bài này sử dụng VIM làm editor là chủ yếu. Vim là 1 trình chỉnh sửa text trên nền terminal rất tiện dụng nhưng vì các tiếp cận hơi khác với các editor khác như notepad++ nên bước đầu làm quen sẽ hơi khó chịu. Nhưng ai đã quen rồi thì sẽ NGHIỆN VIM.
+Trong bài này sử dụng VIM làm editor là chủ yếu. Vim là 1 trình chỉnh sửa text trên nền terminal. Được sử dụng rộng rãi bởi các sysadmin vì rất tiện dụng nhưng vì các tiếp cận hơi khác với các editor khác như notepad++ nên bước đầu làm quen sẽ hơi khó chịu. Nhưng ai đã quen rồi thì sẽ NGHIỆN VIM.
 
 Các bạn có thể tham khảo bài hướng dẫn dùng VIM tại [đây](http://quantrimang.com/cach-su-dung-trinh-bien-soan-vim-54249)
 
