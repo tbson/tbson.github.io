@@ -34,6 +34,14 @@ Test xem PHP đã được cài đúng chưa:
 php -version
 ```
 
+Nếu output ra dạng như sau thì ok:
+
+```bash
+PHP 7.0.8-0ubuntu0.16.04.2 (cli) ( NTS )
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
+    with Zend OPcache v7.0.8-0ubuntu0.16.04.2, Copyright (c) 1999-2016, by Zend Technologies
+```
 
 Test xem Nginx đã được cài đúng chưa:
 
@@ -42,7 +50,7 @@ Dùng trình duyệt truy cập địa chỉ: `127.0.0.1` nếu bạn dùng máy
 Để có được IP của máy ảo thì dùng lệnh:
 
 ```bash
-php -version
+ifconfig
 ```
 
 Ví dụ như đây là output của lệnh trên:
