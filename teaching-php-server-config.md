@@ -2,6 +2,7 @@
 layout: page
 title: Cài đặt Ubuntu 16.04 server.
 subtitle: Config server là 1 kỹ năng không thể thiếu cho 1 full stack web developer.
+share-img: /img/pages/teaching-php/server-config/thumbnail.jpg
 ---
 
 **Bài viết này không bao gồm hướng dẫn chi tiết cài Ubuntu trên (máy thật hoặc máy ảo)**
