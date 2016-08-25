@@ -26,7 +26,7 @@ Config php.ini
 sudo vim /etc/php/7.0/fpm/php.ini
 ```
 
-Chuyển `;cgi.fix_pathinfo=1 thành `cgi.fix_pathinfo=0`
+Chuyển `;cgi.fix_pathinfo=1` thành `cgi.fix_pathinfo=0`
 
 Test xem PHP đã được cài đúng chưa:
 
