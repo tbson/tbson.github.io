@@ -11,6 +11,16 @@ Trong bài này sử dụng VIM làm editor là chủ yếu. Vim là 1 trình ch
 
 Các bạn có thể tham khảo bài hướng dẫn dùng VIM tại [đây](http://quantrimang.com/cach-su-dung-trinh-bien-soan-vim-54249)
 
+**Để trả lời câu hỏi:** Tại sao phải học và dùng Linux để config webserver trong khi đã có WAMP, XAMPP trên Windows cài phát chạy luôn quá tiện lợi:
+
+**Mình xin trả lời:** Làm web mục tiêu cuối cùng là để sản phẩm của mình chạy trên các production server (hầu hết là linux trừ khi bạn dùng ASP hay các công nghệ độc quyền yêu cầu Windows server).
+
+Việc code chạy trên máy của mình không có bất kỳ ý nghĩa gì đối với khách hàng / công ty thuê mình nếu code ko thể chạy trên server của khách hàng/cty. Có rất nhiều trường hợp code chạy ở local nhưng lên server thì chết chỉ vì các vấn đề config môi trường. Và nhiệm vụ bắt buộc của các coder(PHP/Backend) là phải làm cho nó chạy bằng mọi giá.
+
+Trong trường hợp cty của bạn có hẵn 1 bộ phận hỗ trợ kỹ thuật tầng server thì tuyệt quá, nhưng không phải cty nào cũng có các bộ phận này.
+
+Do đó, để làm được điều này thì bạn phải hiểu nguyên tắc hoạt động của server, có kinh nghiệm làm việc với server thì mới có thể khắc phục các lỗi thực tế (không hiếm) này.
+
 ## Bước 1: cài Nginx, PHP7, php-fpm
 
 Để chạy được PHP khi truy cập server bằng trình duyệt, chúng ta cần cài 1 web server là Nginx và gói php-fpm để chạy PHP trên nginx.
