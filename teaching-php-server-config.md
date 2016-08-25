@@ -45,9 +45,9 @@ Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
 
 **Test xem Nginx đã được cài đúng chưa:**
 
-Dùng trình duyệt truy cập địa chỉ: `127.0.0.1` nếu bạn dùng máy thật.
+Nếu bạn dùng Ubuntu trên máy thật thì truy cập địa chỉ: `127.0.0.1` bằng trình duyệt.
 
-Nếu bạn dùng máy ảo thì test bằng địa chỉ IP của máy ảo.
+Nếu bạn dùng máy ảo thì truy cập địa chỉ IP của máy ảo bằng trình duyệt.
 
 Để có được IP của máy ảo thì dùng lệnh:
 
