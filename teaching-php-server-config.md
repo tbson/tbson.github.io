@@ -94,7 +94,9 @@ với nội dung:
 
 **Tạo file cấu hình Nginx cho dự án mới**
 
+```
 sudo vim /etc/nginx/sites-enabled/default
+```
 
 thêm nội dung:
 
@@ -204,7 +206,7 @@ Chọn **Connect to** hoặc **Add Bookmark**
 
 ![Điền thông tin](/img/pages/teaching-php/server-config/valentina-2.png)
 
-## Bước 4: Config samba (dành cho máy ảo)
+## Bước 4: Config samba (chỉ dành cho máy ảo)
 
 Bước này dùng để mount folder chứa source code trên server máy ảo về máy thật để thao tác trực tiếp. Không cần phải code local xong đưa lên server máy ảo để test.
 
