@@ -28,7 +28,7 @@ sudo vim /etc/php/7.0/fpm/php.ini
 
 Chuyển `;cgi.fix_pathinfo=1` thành `cgi.fix_pathinfo=0`
 
-Test xem PHP đã được cài đúng chưa:
+**Test xem PHP đã được cài đúng chưa:**
 
 ```bash
 php -version
@@ -43,7 +43,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
     with Zend OPcache v7.0.8-0ubuntu0.16.04.2, Copyright (c) 1999-2016, by Zend Technologies
 ```
 
-Test xem Nginx đã được cài đúng chưa:
+**Test xem Nginx đã được cài đúng chưa:**
 
 Dùng trình duyệt truy cập địa chỉ: `127.0.0.1` nếu bạn dùng máy thật hoặc IP của máy ảo.
 
