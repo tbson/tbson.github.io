@@ -51,6 +51,8 @@ createdb -O username 9gag
 composer global require "laravel/installer"
 cd /opt/nginx/
 laravel new 9gag
+cd 9gag
+chmod +x artisan
 sudo chmod -R 777 /opt/nginx/9gag/storage
 sudo chmod -R 777 /opt/nginx/9gag/bootstrap/cache
 ```
@@ -70,7 +72,13 @@ DB_USERNAME=username
 DB_PASSWORD=password
 ```
 
-### Bước 1.5: Set domain cho dự án mới
+### Bước 1.5: Init database
+
+```
+./artisan migrate
+```
+
+### Bước 1.6: Set domain cho dự án mới
 
 sudo vim /etc/hosts
 
@@ -86,7 +94,7 @@ Nếu dùng máy thật:
 127.0.0.1        9gag.dev
 ```
 
-### Bước 1.6: Cấu hình Nginx cho dự án mới
+### Bước 1.7: Cấu hình Nginx cho dự án mới
 
 ```
 sudo vim /etc/nginx/sites-enabled/default
