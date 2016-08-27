@@ -12,6 +12,7 @@ subtitle: Quy trình thực hành build trang web dạng 9gag và trang web gi�
 4. Phân tích cấu trúc database, chia module cho từng dự án.
 5. Trình tự thực hiện các module trong từng dự án và kiến thức cần nắm để thực hiện.
   * Vấn đề authentication & authorization.
+  * Sử dụng midleware.
   * Sử dụng form trong Laravel.
   * Sử dụng database relation trong Laravel model.
   * Các vấn đề liên quan đến upload file và tiền xử lý ảnh upload.
