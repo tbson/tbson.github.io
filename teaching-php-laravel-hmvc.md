@@ -55,6 +55,21 @@ sudo chmod -R 777 /opt/nginx/9gag/storage
 sudo chmod -R 777 /opt/nginx/9gag/bootstrap/cache
 ```
 
+**Sửa file `.env`**
+
+Thay đổi các thông số sau:
+
+``
+APP_URL=http://9gag.dev
+
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5421
+DB_DATABASE=9gag
+DB_USERNAME=username
+DB_PASSWORD=password
+``
+
 **Set domain cho dự án mới**
 
 sudo vim /etc/hosts
