@@ -23,7 +23,7 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 Kiểm tra lại sau khi cài đặt:
 
 ```
-composser
+composer
 ```
 
 Nếu ra kết quả có dòng như:
