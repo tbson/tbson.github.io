@@ -12,7 +12,7 @@ share-img: /img/pages/teaching-php/laravel-hmvc/thumbnail.jpg
 
 ## Bước 1: Cài đặt Laravel 5.3
 
-**Cài đặt composer**
+### Cài đặt composer
 
 ```
 sudo apt-get update
@@ -36,7 +36,7 @@ Composer version 1.2.0 2016-07-19 01:28:52
 
 Thì đạt yêu cầu
 
-**Tạo database mới cho dự án**
+### Tạo database mới cho dự án
 
 ```
 sudo -i -u postgres
@@ -45,7 +45,7 @@ createdb -O username 9gag
 
 `username` ở đây là tài khoản được tạo khi config server ban đầu tại bài: [Cài đặt Ubuntu 16.04 server](/teaching-php-server-config/)
 
-**Cài đặt Laravel**
+### Cài đặt Laravel
 
 ```
 composer global require "laravel/installer"
@@ -55,7 +55,7 @@ sudo chmod -R 777 /opt/nginx/9gag/storage
 sudo chmod -R 777 /opt/nginx/9gag/bootstrap/cache
 ```
 
-**Sửa file `.env`**
+### Sửa file `.env`
 
 Thay đổi các thông số sau:
 
@@ -64,13 +64,13 @@ APP_URL=http://9gag.dev
 
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
-DB_PORT=5421
+DB_PORT=5432
 DB_DATABASE=9gag
 DB_USERNAME=username
 DB_PASSWORD=password
 ```
 
-**Set domain cho dự án mới**
+### Set domain cho dự án mới
 
 sudo vim /etc/hosts
 
@@ -85,7 +85,8 @@ Nếu dùng máy thật:
 ```
 127.0.0.1        9gag.dev
 ```
-**Cấu hình Nginx cho dự án mới**
+
+### Cấu hình Nginx cho dự án mới
 
 sudo vim /etc/nginx/sites-enabled/default
 
