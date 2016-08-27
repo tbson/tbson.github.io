@@ -11,10 +11,10 @@ subtitle: Quy trình thực hành build trang web dạng 9gag và trang web gi�
 3. Kết hợp sử dụng Route, Model, View, Controller trong mô hình HMVC.
 4. Phân tích cấu trúc database, chia module cho từng dự án.
 5. Trình tự thực hiện các module trong từng dự án và kiến thức cần nắm để thực hiện.
-..* Vấn đề authentication & authorization.
-..* Sử dụng form trong Laravel.
-..* Sử dụng database relation trong Laravel model.
-..* Các vấn đề liên quan đến upload file và tiền xử lý ảnh upload.
+  * Vấn đề authentication & authorization.
+  * Sử dụng form trong Laravel.
+  * Sử dụng database relation trong Laravel model.
+  * Các vấn đề liên quan đến upload file và tiền xử lý ảnh upload.
 6. Sử dụng Github để quản lý code và trực tiếp config 1 server thực tế (Digital Ocean Server)
 
 **Bước 4 và 5 là các bước quan trọng nhất, sẽ có nhiều bước nhỏ hơn đối với từng dự án và cần thảo luận nhóm**
