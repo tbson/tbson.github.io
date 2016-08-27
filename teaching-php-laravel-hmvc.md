@@ -80,7 +80,9 @@ DB_PASSWORD=password
 
 ### Bước 1.6: Set domain cho dự án mới
 
+```
 sudo vim /etc/hosts
+```
 
 Nếu dùng máy ảo thì thêm dòng:
 
@@ -142,7 +144,7 @@ Sau đó restart lại Nginx
 service nginx restart
 ```
 
-Test thử bằng cách vào địa chỉ: ```http:9gag.dev```
+Test thử bằng cách vào địa chỉ: ```http://9gag.dev```
 
 ## Bước 2: Config HMVC
 
