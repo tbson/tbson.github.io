@@ -150,9 +150,9 @@ Laravel mặc định sử dụng mô hình MVC, mô hình này rất phù hợp
 
 Tất cả Model nằm trong `app`, tất cả View nằm trong `resources/views` và tất cả Controller nằm trong `app/Http/Controllers`. Khi dự án phình to ra thì các folder này cũng sẽ to ra tương ứng và khi cần chỉnh sửa 1 chức năng nào đó rất có thể chúng ta sẽ phải di chuyển trên 3 tập folder này.
 
-Mô hình HMVC sinh ra để giải quyết vấn đề đó. HMVC có nghĩa là Hierarchical model–view–controller. Một đơn vị nhỏ nhất của HMVC là module, module này bao gồm 1 cấu trúc MVC làm 1 tính năng cụ thể nào đó. Ví dụ module `User` sẽ làm tất cả các việc như list/hêm/sửa/xoá/login/logout... và quản lý luôn các URL (route) liên quan đến các chức năng này.
+Mô hình HMVC sinh ra để giải quyết vấn đề đó. HMVC có nghĩa là `Hierarchical model–view–controller`. Một đơn vị của HMVC là module, module này bao gồm 1 cấu trúc MVC và các route tương ứng để làm 1 tập các tính năng cụ thể.
 
-Do đó, khi cần chỉnh sửa 1 tính năng nào đó thuộc về `User` ta chỉ quan tâm đến chính module `User`. Điều này sẽ tránh mất thời gian tìm kiếm file model/view/controller tương ứng và tránh nhầm lẫn.
+Ví dụ module `User` sẽ làm tất cả các việc như list/hêm/sửa/xoá/login/logout... và quản lý luôn các URL (route) liên quan đến các chức năng này. Khi cần chỉnh sửa 1 tính năng nào đó thuộc về `User` thì ta chỉ quan tâm đến chính module (folder) `User`. Điều này sẽ tránh mất thời gian tìm kiếm file model/view/controller tương ứng và tránh nhầm lẫn.
 
 Dự án lớn ra thì sẽ thêm các module tương ứng. Mỗi thành viên trong nhóm code sẽ quản lý 1 hay 1 vài module độc lập với nhau sẽ tránh tình trang conflict code.
 
