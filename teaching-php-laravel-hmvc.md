@@ -146,7 +146,7 @@ Test thử bằng cách vào địa chỉ: ```http:9gag.dev```
 
 ## Bước 2: Config HMVC
 
-### Bước 1.1: Khai báo địa chỉ / cấu hình module
+### Bước 2.1: Khai báo địa chỉ / cấu hình module
 
 Folder chứa các module tạm đặt tại `modules` tức là ngay thư mục gốc của project: `/opt/nginx/9gag/app/Modules`.
 
@@ -190,3 +190,86 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider{
     public function register(){}
 }
 ```
+
+Khai báo service provider này trong `config/app.php` tại mục `providers`:
+
+```php
+'providers' => [
+    ...
+    /*
+     * Custom Service Providers...
+     */
+    'App\Modules\ServiceProvider',
+]
+```
+
+### Bước 2.2: Tiến hành tạo các module
+
+Tạo một module tên là `Category` thì chúng ta cần có cấu trúc sau:
+
+```
+app/
+└── Modules
+    ├── Category
+    │   ├── Controllers
+    │   │   └── CategoryController.php
+    │   ├── Models
+    │   │   └── Category.php
+    │   ├── Views
+    │   │   └── index.blade.php
+    │   └── routes.php
+    └── ServiceProvider.php
+```
+
+### Bước 2.3: Test thử tính năng
+
+File `CategoryController.php` có nội dung:
+
+```php
+<?php
+namespace App\Modules\Category\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+
+class CategoryController extends Controller{
+    public function __construct(){
+        # parent::__construct();
+    }
+    public function index(Request $request){
+        return view('Category::index');
+    }
+}
+```
+
+File `index.blade.php` có nội dung:
+
+```html
+<h1>Hello module</h1>
+```
+
+File `routes.php` có nội dung:
+
+```php
+<?php
+$namespace = 'App\Modules\Category\Controllers';
+Route::group(
+    ['module'=>'Category', 'namespace' => $namespace],
+    function() {
+        Route::get('category', [
+            # middle here
+            'as' => 'index',
+            'uses' => 'CategoryController@index'
+        ]);
+    }
+);
+```
+
+Cuối cùng là chạy thử trên trình duyệt:
+
+```
+http://9gag.dev/category
+```
+
+DONE
