@@ -145,3 +145,21 @@ service nginx restart
 Test thử bằng cách vào địa chỉ: ```http:9gag.dev```
 
 ## Bước 2: Config HMVC
+
+### Bước 1.1: Khai báo địa chỉ / cấu hình module
+
+Folder chứa các module tạm đặt tại `modules` tức là ngay thư mục gốc của project: /opt/nginx/9gag/modules, lưu ý là Folder này không nhất thiết có tên là modules.
+
+Sau khi tạo folder xong chúng ta sẽ khao báo folder này trong mục `autoload/psr-4` ở file `composer.json`
+
+```json
+"autoload": {
+    "classmap": [
+        "database"
+    ],
+    "psr-4": {
+        "App\\": "app/",
+        "Modules\\": "modules/"
+    }
+},
+```
