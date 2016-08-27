@@ -12,7 +12,7 @@ share-img: /img/pages/teaching-php/laravel-hmvc/thumbnail.jpg
 
 ## Bước 1: Cài đặt Laravel 5.3
 
-**Cài đặt composer
+**Cài đặt composer**
 
 ```
 sudo apt-get update
@@ -36,7 +36,7 @@ Composer version 1.2.0 2016-07-19 01:28:52
 
 Thì đạt yêu cầu
 
-**Cài đặt Laravel
+**Cài đặt Laravel**
 
 ```
 composer global require "laravel/installer"
