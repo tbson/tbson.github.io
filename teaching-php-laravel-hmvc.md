@@ -36,6 +36,15 @@ Composer version 1.2.0 2016-07-19 01:28:52
 
 Thì đạt yêu cầu
 
+**Tạo database mới cho dự án**
+
+```
+sudo -i -u postgres
+createdb -O username 9gag
+```
+
+`username` ở đây là tài khoản được tạo khi config server ban đầu tại bài: [Cài đặt Ubuntu 16.04 server](/teaching-php-server-config/)
+
 **Cài đặt Laravel**
 
 ```
