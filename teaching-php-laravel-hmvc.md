@@ -158,7 +158,7 @@ Dự án lớn ra thì sẽ thêm các module tương ứng. Mỗi thành viên 
 
 ### Bước 2.1: Khai báo địa chỉ / cấu hình module
 
-Folder chứa các module tạm đặt tại `modules` tức là ngay thư mục gốc của project: `/opt/nginx/9gag/app/Modules`.
+Folder chứa các module đặt tại `app/Modules` tức là ngay trong thư mục `app` của project: `/opt/nginx/9gag/app/Modules`.
 
 Sau khi tạo folder xong chúng ta sẽ khao báo folder này trong mục `autoload/psr-4` ở file `composer.json`
 
