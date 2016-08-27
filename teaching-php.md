@@ -11,3 +11,4 @@ subtitle: Thực hành 2 dự án bằng PHP bao gồm trang web dạng 9gag và
 3. Kết hợp sử dụng Route, Model, View, Controller trong mô hình HMVC.
 4. Phân tích cấu trúc database, chia module cho từng dự án.
 5. Trình tự thực hiện các module trong từng dự án và kiến thức cần nắm để thực hiện.
+6. Sử dụng Github để quản lý code và trực tiếp config 1 server thực tế (Digital Ocean Server)
