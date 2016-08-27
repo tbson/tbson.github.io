@@ -148,7 +148,7 @@ Test thử bằng cách vào địa chỉ: ```http:9gag.dev```
 
 ### Bước 1.1: Khai báo địa chỉ / cấu hình module
 
-Folder chứa các module tạm đặt tại `modules` tức là ngay thư mục gốc của project: /opt/nginx/9gag/modules, lưu ý là Folder này không nhất thiết có tên là modules.
+Folder chứa các module tạm đặt tại `modules` tức là ngay thư mục gốc của project: `/opt/nginx/9gag/app/Modules`.
 
 Sau khi tạo folder xong chúng ta sẽ khao báo folder này trong mục `autoload/psr-4` ở file `composer.json`
 
@@ -159,7 +159,34 @@ Sau khi tạo folder xong chúng ta sẽ khao báo folder này trong mục `auto
     ],
     "psr-4": {
         "App\\": "app/",
-        "Modules\\": "modules/"
+        "Modules\\": "app/Modules/"
     }
 },
+```
+
+Trong folder `app/Modules`, chúng ta sẽ tạo 1 service provider trong file `ServiceProvider.php`.
+
+`app/Modules/ServiceProvider.php` sẽ có nội dung:
+
+```php
+<?php
+
+namespace App\Modules;
+use File;
+
+
+class ServiceProvider extends \Illuminate\Support\ServiceProvider{
+    public function boot(){
+        $listModule = array_map('basename', File::directories(__DIR__));
+        foreach ($listModule as $module) {
+            if(file_exists(__DIR__.'/'.$module.'/routes.php')) {
+                include __DIR__.'/'.$module.'/routes.php';
+            }
+            if(is_dir(__DIR__.'/'.$module.'/Views')) {
+                $this->loadViewsFrom(__DIR__.'/'.$module.'/Views', $module);
+            }
+        }
+    }
+    public function register(){}
+}
 ```
