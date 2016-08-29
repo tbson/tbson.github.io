@@ -18,7 +18,7 @@ Hỗ trợ doanh nghiệp vừa và nhỏ xây dựng các hệ thống website/
 
 ### Thông tin liên hệ
 
-**Nếu bạn có nhu cầu xây dựng / tư vấn hệ thống website / webapp thì hãy liên hệ với tôi sớm nhất có thể.**
+**Nếu bạn đang cần làm web, cần người làm web hoặc chỉ đơn giản là cần tư vấn xây dựng hệ thống website / webapp thì hãy liên hệ ngay với tôi.**
 
 * Trần Bắc Sơn
 * [+84906696527](tel:+84906696527)
