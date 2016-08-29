@@ -4,7 +4,7 @@ title: Trần Bắc Sơn
 subtitle: Fullstack Web/Mobile Developer
 ---
 
-Hỗ trợ doanh nghiệp vừa và nhỏ xây dựng các hệ thống quản lý nội bộ web/mobile phù hợp nhất với nhu cầu của công ty.
+Hỗ trợ doanh nghiệp vừa và nhỏ xây dựng các hệ thống website/mobile phù hợp nhất với nhu cầu của công ty.
 
 ### Thế mạnh & kinh nghiệm:
 
