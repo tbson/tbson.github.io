@@ -21,6 +21,6 @@ Hỗ trợ doanh nghiệp vừa và nhỏ xây dựng các hệ thống website/
 **Nếu bạn có nhu cầu xây dựng / tư vấn hệ thống website / webapp thì hãy liên hệ với tôi sớm nhất có thể.**
 
 * Trần Bắc Sơn
-* 090.6696.527
+* [+84906696527](tel:+84906696527)
 * [mail@tbson.info](mailto:mail@tbson.info)
 
