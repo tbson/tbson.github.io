@@ -27,15 +27,7 @@ navbar-links:
   # Dự án tiêu biểu: "http://deanattali.com"
   Đào tạo:
     - PHP: "teaching-php"
-  Dự án tiêu biểu:
-    - Dịch vụ tạo CV XIVILA: "project-dich-vu-tao-cv-xivila"
-    - Hệ thống quản lý ghi số nước: "project-quan-ly-ghi-so-nuoc"
-    - Hệ thống quản lý báo giá: "project-he-thong-quan-ly-bao-gia"
-    - Hệ thống quản lý cty đa cấp: "project-he-thong-quan-ly-cty-da-cap"
-    - Hệ thống quản lý học viên trung tâm du học: "project-he-thong-quan-ly-hoc-vien-trung-tam-du-hoc"
-    - Hệ thống quản lý kế toán kho xưởng: "project-he-thong-quan-ly-ke-toan-kho-xuong"
-    - Hệ thống quản lý báo cáo cho mảng SME của ngân hàng: "project-he-thong-quan-ly-bao-cao-cho-he-thong-sme-cua-ngan-hang"
-    - Trang giới thiệu dự án BDS: "project-web-bds-xuan-mai"
+  Dự án tiêu biểu: "projects"
   Tác giả: "aboutme"
 
 # Image to show in the navigation bar - image must be a square (width = height)
