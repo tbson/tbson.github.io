@@ -150,21 +150,13 @@ var_dump("hello");
 
 Cách nhận dữ liệu phổ biến từ request:
 
-Từ URL
+Vào folder chứa file `url.php` và `form.html` để chạy build-in server:
 
-```php
-http://localhost:8000/url.php?some_var=hello
+```
+php -nS localhost:8000
 ```
 
-với nội dung file `url.php`:
-
-```php
-print_r($_GET["some_var"]);
-```
-
-Từ Form:
-
-Nội dung fire form.php
+Tạo form gửi dữ liệu trong file `form.html`:
 
 ```html
 <form action="url.php" method="GET">
@@ -173,13 +165,25 @@ Nội dung fire form.php
 </form>
 ```
 
+Tạo file nhận dữ liệu `url.php`:
+
+```php
+<?php
+
+print_r($_GET["some_var"]);
+```
+
 Vào địa chỉ:
 
 ```
 http://localhost:8000/form.php
 ```
 
-Và gửi dữ liệu
+Sau khi bấm nút "Send data" thì trình duyệt sẽ gửi tới địa chỉ bên dưới để nhận kết quả:
+
+```
+http://localhost:8000/url.php?some_var=hello
+```
 
 **Bài tập Làm 1 form để nhập tên người dùng, bấm gửi để hiển thị lời chào**
 
