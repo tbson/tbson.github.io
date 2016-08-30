@@ -36,13 +36,13 @@ var_dump(RANDOM_NUMBER);
 
 PHP có các kiểu dữ liệu cơ bản gồm:
 
-• `String` -> Chuỗi
-• `Integer` -> Số nguyên từ -2,147,483,648 đến 2,147,483,647
-• `Float` -> Số thập phân
-• `Boolean` -> True/False
-• `Array` -> Mảng chứa phần tử là các kiểu dữ liệu còn lại
-• `Object` -> Dạng đối tượng
-• `NULL` -> Dạng rỗng
+* `String` -> Chuỗi
+* `Integer` -> Số nguyên từ -2,147,483,648 đến 2,147,483,647
+* `Float` -> Số thập phân
+* `Boolean` -> True/False
+* `Array` -> Mảng chứa phần tử là các kiểu dữ liệu còn lại
+* `Object` -> Dạng đối tượng
+* `NULL` -> Dạng rỗng
 
 PHP sẽ tự động nhận dạng kiểu dữ liệu dựa vào giá trị được gán cho biến.
 
