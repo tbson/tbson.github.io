@@ -2,6 +2,7 @@
 layout: page
 title: Thực hành PHP.
 subtitle: Quy trình thực hành build trang web dạng 9gag và trang web giới thiệu đặc sản.
+share-img: /img/pages/teaching-php/banner.jpg
 ---
 
 **Kiến thức nền tảng:**
