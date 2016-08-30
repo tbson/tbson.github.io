@@ -205,6 +205,7 @@ Ngoài những function này, chúng ta có thể dựa vào nhu cầu cụ th�
 **Các loại hàm cần quan tâm:**
 
 **Function chỉ là 1 khối lệnh thông thường, không tham số**
+
 ```php
 <?php
 
@@ -216,6 +217,7 @@ sayHello();
 ```
 
 **Function có tham số**
+
 ```php
 <?php
 function threeWishesFromGenie($firstWish, $secondWish, $thirdWish){
@@ -225,6 +227,7 @@ threeWishesFromGenie("Rich", "Handsome", "Smart");
 ```
 
 **Function có tham số mặc định**
+
 ```php
 <?php
 function threeWishesFromGenie($firstWish, $secondWish, $defaultWish="Smart"){
@@ -234,6 +237,7 @@ threeWishesFromGenie("Rich", "Handsome");
 ```
 
 **Function có giá trị trả về**
+
 ```php
 <?php
 function sayHello($name){
