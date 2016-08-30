@@ -29,7 +29,7 @@ Nếu Front-End là ReactJs và Back-End là NodeJs thì 2 nhược điểm kia 
 
 Nhưng sự kết hợp PHP/Angular không phải là 1 sự kết hợp tồi vì:
 
-1. PHP tiết kiệm tài nguyên do dùng Nginx (đặc biệt là dev nghèo có thể host tầm 6 trang hoặc nhiều hơn trên 1 host có bộ xử lý 1 core và 1GB RAM).
+1. PHP tiết kiệm tài nguyên do chỉ dùng Nginx (đặc biệt là dev nghèo có thể host tầm 6 trang hoặc nhiều hơn trên 1 host có bộ xử lý 1 core và 1GB RAM). Khi bạn dùng NodeJs thì không bao giờ có chuyện đó.
 2. Angular dễ học dễ dùng và các công việc liên quan tới Angular hầu hết trong các trang cần login nên không cần SEO. Những trang cần SEO nằm ở ngoài như trang chủ, trang show blog, trang show sản phẩm thì cấu trúc quá đơn giản, không cần dùng tới Angular mà chỉ cần dùng Blade của Laravel là có thể xử lý rất tốt.
 3. Có thể tối ưu dữ liệu trả về từ API để tối ưu tốc độ load của client.
 4. Config và hiểu Server Rendering không hề đơn giản, vì khi làm việc với hệ sinh thái này, chúng ta cần học thêm nhiều kiến thức mới nữa như: Immutable, Flux/Redux, Webpack config (đào sâu)
