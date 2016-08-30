@@ -241,7 +241,7 @@ Ví dụ:
 $canDrink = $age>=18?true:false;
 ```
 
-## Câu lệnh switch (switch statement)
+### Câu lệnh switch (switch statement)
 
 **Cú pháp:**
 
