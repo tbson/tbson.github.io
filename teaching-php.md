@@ -4,6 +4,11 @@ title: Thực hành PHP.
 subtitle: Quy trình thực hành build trang web dạng 9gag và trang web giới thiệu đặc sản.
 ---
 
+**Kiến thức nền tảng:**
+
+1. [Biến - điều kiện - vòng lặp - debug](/teaching-php-variable-condition-loop-debug)
+2. [Mảng - Hàm](/teaching-php-array-function)
+
 **Mục lục:**
 
 1. [Cài môi trường phát triển trên Ubuntu server 16.04](/teaching-php-server-config)
