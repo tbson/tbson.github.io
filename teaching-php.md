@@ -6,8 +6,8 @@ subtitle: Quy trình thực hành build trang web dạng 9gag và trang web gi�
 
 **Kiến thức nền tảng:**
 
-1. [Biến - điều kiện - vòng lặp - debug](/teaching-php-variable-condition-loop-debug)
-2. [Mảng - Hàm](/teaching-php-array-function)
+1. [Variable - Conditional Statement - Loop - Debug](/teaching-php-variable-condition-loop-debug)
+2. [Array - Function](/teaching-php-array-function)
 
 **Mục lục:**
 
