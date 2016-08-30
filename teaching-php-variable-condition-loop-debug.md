@@ -282,13 +282,66 @@ switch($step){
 
 Câu lệnh for được sử dụng khi bạn biết chính xác số lần lặp
 
+**Ví dụ**
+
+```php
+<?php
+
+for($i=0; $i<=20; $i++){
+	print_r($i*$i."\n");
+}
+```
+
 ### Câu lệnh foreach
 
 Câu lệnh foreach được sử dụng cho các mảng để lấy thông tin tất cả các phần tử trong mảng
 
+**Ví dụ**
+
+```php
+<?php
+$listItem = [
+	"key1" => "value 1",
+	"key2" => "value 2",
+	"key3" => "value 3",
+	"key4" => "value 4",
+	"key5" => "value 5",
+];
+print_r("---------------HASH ARRAY WITH KEY - VALUE ----------------\n");
+foreach($listItem as $key => $value){
+	print_r($key." => ".$value."\n");
+}
+$listItem = [
+	"value 1",
+	"value 2",
+	"value 3",
+	"value 4",
+	"value 5",
+];
+print_r("---------------NORMAL ARRAY WITH KEY - VALUE----------------\n");
+foreach($listItem as $key => $value){
+	print_r($key." => ".$value."\n");
+}
+print_r("---------------NORMAL ARRAY WITH VALUE ONLY----------------\n");
+foreach($listItem as $value){
+	print_r($value."\n");
+}
+```
+
 ### Câu lệnh while/do…while
 
 Câu lệnh while được dung để chạy cho đến khi điều kiện có giá trị là false.
+
+**Ví dụ**
+
+```php
+<?php
+
+while(true){
+	sleep(1);
+	print(date("h:i:s")."\n");
+}
+```
 
 while và do…while chỉ khác nhau ở: while: block code chạy sau khi kiểm tra điều kiện, do…while chạy block code trước khi kiểm tra điều kiện, do đó câu lệnh do…while luôn chạy ít nhất 1 lần cho dù điều kiện có đúng hay không.
 
