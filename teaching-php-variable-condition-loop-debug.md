@@ -14,7 +14,7 @@ Biến số có thể thay đổi giá trị trong quá trình chạy (runtime)
 
 ```php
 <?php
-$message = "hello world”;
+$message = "hello world";
 echo $message;
 ```
 
@@ -48,11 +48,11 @@ PHP sẽ tự động nhận dạng kiểu dữ liệu dựa vào giá trị đ�
 
 ```php
 <?php
-$strVar = "hello”;
+$strVar = "hello";
 $intVar = 365;
 $floatVar = 3.14;
 $boolVar = true;
-$arrayVar = ["this”, "is”, "an”, "array”];
+$arrayVar = ["this", "is", "an", "array"];
 $nullVar = null;
 class Car {
     function Car() {
@@ -183,7 +183,7 @@ Và gửi dữ liệu
 
 **Bài tập Làm 1 form để nhập tên người dùng, bấm gửi để hiển thị lời chào**
 
-**Ví dụ:** Nhập "PHP” thì sau khi gửi dữ liệu sẽ hiện ra dòng: "Hello PHP! How are you?”
+**Ví dụ:** Nhập "PHP" thì sau khi gửi dữ liệu sẽ hiện ra dòng: "Hello PHP! How are you?"
 
 ## Cấu trúc rẽ nhánh
 
