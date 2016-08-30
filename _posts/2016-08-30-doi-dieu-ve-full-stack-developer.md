@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Các kỹ năng cần có để trỡ thành 1 Full Stack Developer
-subtitle: Full Stack Developer có thể tự tin giải quyết hầu hết các vấn đề về web mà không phụ thuộc vào bên nào.
+subtitle: Full Stack Developer có thể tự tin giải quyết hầu hết các vấn đề về web mà không bị phụ thuộc vào bên khác.
 bigimg: /img/posts/2016-08-30/banner.jpg
 share-img: /img/posts/2016-08-30/banner.jpg
 ---
