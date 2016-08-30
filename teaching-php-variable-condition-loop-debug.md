@@ -14,7 +14,7 @@ Biến số có thể thay đổi giá trị trong quá trình chạy (runtime)
 
 ```php
 <?php
-$message = “hello world”;
+$message = "hello world”;
 echo $message;
 ```
 
@@ -48,11 +48,11 @@ PHP sẽ tự động nhận dạng kiểu dữ liệu dựa vào giá trị đ�
 
 ```php
 <?php
-$strVar = “hello”;
+$strVar = "hello”;
 $intVar = 365;
 $floatVar = 3.14;
 $boolVar = true;
-$arrayVar = [“this”, “is”, “an”, “array”];
+$arrayVar = ["this”, "is”, "an”, "array”];
 $nullVar = null;
 class Car {
     function Car() {
@@ -140,6 +140,7 @@ var_dump # In ra giá trị và kiểu dữ liệu
 Ví dụ:
 
 ```php
+<?php
 echo "hello\n";
 echo("hello\n");
 print("hello\n");
@@ -182,7 +183,7 @@ Và gửi dữ liệu
 
 **Bài tập Làm 1 form để nhập tên người dùng, bấm gửi để hiển thị lời chào**
 
-**Ví dụ:** Nhập “PHP” thì sau khi gửi dữ liệu sẽ hiện ra dòng: “Hello PHP! How are you?”
+**Ví dụ:** Nhập "PHP” thì sau khi gửi dữ liệu sẽ hiện ra dòng: "Hello PHP! How are you?”
 
 ## Cấu trúc rẽ nhánh
 
@@ -190,9 +191,7 @@ Và gửi dữ liệu
 
 Cú pháp:
 
-```php
-<?php
-
+```
 If(<điều kiện>){
 	<nội dung cần thực thi>
 }
@@ -242,16 +241,16 @@ $canDrink = $age>=18?true:false;
 
 Cú pháp:
 
-```php
+```
 switch(<điều kiện>){
 	case <điều kiện 1>:
 		<nội dung cần thực thi 1>
 	break;
-case <điều kiện 2>:
-<nội dung cần thực thi 2>
+	case <điều kiện 2>:
+		<nội dung cần thực thi 2>
 	break;
 	default:
-<nội dung còn lại cần thực thi>
+		<nội dung còn lại cần thực thi>
 }
 ```
 
@@ -287,8 +286,7 @@ Xử lý loại lỗi này nhanh hay chậm phụ thuộc rất nhiều vào kin
 
 Cách phổ biến nhất là bắt lỗi bằng câu lệnh try…catch
 
-```php
-<?php
+```
 try{
 	<Logic cần chạy>
 }catch(Error $e){
