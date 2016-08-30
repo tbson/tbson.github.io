@@ -191,7 +191,7 @@ http://localhost:8000/url.php?some_var=hello
 
 ## Cấu trúc rẽ nhánh
 
-###Câu lệnh if
+### Câu lệnh if
 
 Cú pháp:
 
