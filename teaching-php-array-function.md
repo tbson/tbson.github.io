@@ -156,7 +156,7 @@ Extra 1: Data 1
 Extra 1: Data 1
 ```
 
-Đọc file:
+**Đọc file:**
 
 ```php
 <?php
@@ -176,7 +176,7 @@ while(!feof($myFile)){
 fclose($myFile);
 ```
 
-Ghi file:
+**Ghi file:**
 
 ```php
 <?php
@@ -189,6 +189,42 @@ fwrite($myFile, $newContent);
 fwrite($myFile, $newContent);
 fclose($myFile);
 ```
+
+**Upload file**
+
+Tạo 1 folder tên là `uploaded` và 2 file `upload_landing.html`, `upload_destination.php` với nội dung:
+
+```html
+<!-- upload_landing.html -->
+<form method="post" action="upload_destination.php" enctype="multipart/form-data">
+<input type="file" name="uploadFile"/>
+<button>Upload file</button>
+</form>
+```
+
+```php
+<?php
+
+$targetDir = "./uploaded/";
+$targetFile = $targetDir.basename($_FILES["uploadFile"]["name"]);
+$tmpFile = $_FILES["uploadFile"]["tmp_name"];
+
+$uploadStatus = move_uploaded_file($tmpFile, $targetFile);
+
+if($uploadStatus){
+	print("Upload success!");
+}else{
+	print("Upload failed!");
+}
+```
+
+Chạy build-in server:
+
+```
+php -nS localhost:8000
+```
+
+Vào địa chỉ `http://localhost:8000/upload_landing.html` để test.
 
 Tham khảo thêm các option tại: http://www.w3schools.com/php/php_file_open.asp
 
