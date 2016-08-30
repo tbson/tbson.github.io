@@ -367,6 +367,20 @@ try{
 
 Câu lệnh try…catch được sử dụng để xử lý cả các lỗi đoán được và không doán được trong quá trình code chạy.
 
+**Ví dụ**
+
+```php
+<?php
+
+$listItem = [1, 2, 3, 4];
+try{
+	$listItem->someMethod(); # array $listItem không có hàm someMethod nên gây ra lỗi
+}catch(Error $e){
+	print("Catch error.\n");
+}
+
+```
+
 Ngoài ra chúng ta có thể dùng các câu lệnh như var_dump(…);die; hoặc print_r(…);die để in ra giá trị/cấu trúc của các đối tượng trong quá trình code chạy để kiểm tra xem giá trị đúng chưa hoặc chương trình bị ngắt tại điểm nào. Khi PHP bắt gặp câu lệnh die ở bất kì nơi nào trong code thì sẽ dừng lại tại đó và chúng ta có thể cô lập được lỗi mà xử lý.
 
 ### Bài tập
