@@ -286,3 +286,7 @@ Sửa, xoá một dòng trong mảng 2 chiều
 
 **Vấn đề:** Có 1 danh bạ điện thoại gồm 1 danh sách các contact có cấu trúc: tên liên lạc, số đt, email
 Hãy viết 1 hàm để sửa và 1 hàm để xoá 1 contact dựa trên số điện thoại.
+
+**Bài liên quan:**
+
+- [Variable, loop, conditional statement và debug](/teaching-php-variable-condition-loop-debug)

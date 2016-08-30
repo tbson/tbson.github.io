@@ -394,5 +394,8 @@ Ngoài ra chúng ta có thể dùng các câu lệnh như var_dump(…);die; ho�
 **Vấn đề:** Có 1 bảng điểm của các sinh viên có cấu trúc tên sinh viên, điểm tin học
 Hãy tìm ra sinh viên có điểm cao nhất để khen thưởng và sinh viên có điểm thấp nhất (với điều kiện số điểm này nhỏ hơn 5 để nhắc nhở).
 
+**Bài liên quan:**
+
+- [Array - Function](/teaching-php-array-function)
 
 
