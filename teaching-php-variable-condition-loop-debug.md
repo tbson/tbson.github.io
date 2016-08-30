@@ -122,7 +122,7 @@ else
    var_dump(false);
 ```
 
-## Nhập xuất
+## Nhập xuất (I/O)
 
 PHP được thiết kế để làm web application nên không quan trọng việc `I/O` trực tiếp (ví dụ như `CIN/COUT` của `C++`).
 
@@ -189,9 +189,9 @@ http://localhost:8000/url.php?some_var=hello
 
 **Ví dụ:** Nhập "PHP" thì sau khi gửi dữ liệu sẽ hiện ra dòng: "Hello PHP! How are you?"
 
-## Cấu trúc rẽ nhánh
+## Cấu trúc rẽ nhánh (Conditional statements)
 
-### Câu lệnh if
+### Câu lệnh if (if statement)
 
 Cú pháp:
 
@@ -230,7 +230,7 @@ if($delta <  0){
 print_r($message."\n");
 ```
 
-### Câu lệnh if dạng rút gọn (shorthand)
+### Câu lệnh if dạng rút gọn (if shorthand)
 
 Câu lệnh `if` dạng rút gọn được sử dụng rất nhiều trong thực tế vì tính tiện dụng và ngắn ngọn của nó.
 
@@ -241,7 +241,7 @@ Ví dụ:
 $canDrink = $age>=18?true:false;
 ```
 
-## Câu lệnh switch
+## Câu lệnh switch (switch statement)
 
 **Cú pháp:**
 
