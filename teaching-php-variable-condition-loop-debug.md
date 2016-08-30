@@ -192,18 +192,18 @@ Và gửi dữ liệu
 Cú pháp:
 
 ```
-If(<điều kiện>){
+if(<điều kiện>){
 	<nội dung cần thực thi>
 }
 
-If(<điều kiện>){
+if(<điều kiện>){
 	<nội dung cần thực thi>
 }else{
 	<trường hợp khác>
 }
 
 
-If(<điều kiện>){
+if(<điều kiện>){
 	<nội dung cần thực thi>
 }else if(<điều kiện khác>){
 	<nội dung cần thực thi>
@@ -228,7 +228,7 @@ print_r($message."\n");
 
 ### Câu lệnh if dạng rút gọn (shorthand)
 
-Câu lệnh if dạng rút gọn được sử dụng rất nhiều trong thực tế vì tính tiện dụng và ngắn ngọn của nó.
+Câu lệnh `if` dạng rút gọn được sử dụng rất nhiều trong thực tế vì tính tiện dụng và ngắn ngọn của nó.
 
 Ví dụ:
 
@@ -239,7 +239,7 @@ $canDrink = $age>=18?true:false;
 
 ## Câu lệnh switch
 
-Cú pháp:
+**Cú pháp:**
 
 ```
 switch(<điều kiện>){
@@ -251,6 +251,24 @@ switch(<điều kiện>){
 	break;
 	default:
 		<nội dung còn lại cần thực thi>
+}
+```
+
+**Ví dụ**
+
+```php
+<?php
+
+$step = 1;
+switch($step){
+	case 1:
+		print_r('buoc 1');
+	case 2:
+		print_r('buoc 2');
+	case 3:
+		print_r('buoc 3');
+	default:
+		print_r('buoc 1');
 }
 ```
 
