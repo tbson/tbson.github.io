@@ -198,18 +198,51 @@ PHP có rất nhiều function có sẵn (hơn 1.000 functions) rất hữu dụ
 
 Ngoài những function này, chúng ta có thể dựa vào nhu cầu cụ thể để định nghĩa ra các function cho riêng mình.
 
-Function là một khối các câu lệnh có thể sử dụng lại tại nhiều nơi trong chương trình.
-
-Function sẽ không chạy ngay khi được khai báo.
-
-Function chỉ chạy khi được gọi.
+* Function là một khối các câu lệnh có thể sử dụng lại tại nhiều nơi trong chương trình.
+* Function sẽ không chạy ngay khi được khai báo.
+* Function chỉ chạy khi được gọi.
 
 **Các loại hàm cần quan tâm:**
 
-* Function chỉ là 1 khối lệnh thông thường, không tham số
-* Function có tham số
-* Function có tham số mặc định
-* Function có giá trị trả về
+**Function chỉ là 1 khối lệnh thông thường, không tham số**
+```php
+<?php
+
+function sayHello(){
+	print("Hello world\n");
+}
+
+sayHello();
+```
+
+**Function có tham số**
+```php
+<?php
+function threeWishesFromGenie($firstWish, $secondWish, $thirdWish){
+	print("Your wishes are: \"".$firstWish.", ".$secondWish.", ".$thirdWish."\"\n");
+}
+threeWishesFromGenie("Rich", "Handsome", "Smart");
+```
+
+**Function có tham số mặc định**
+```php
+<?php
+function threeWishesFromGenie($firstWish, $secondWish, $defaultWish="Smart"){
+	print("Your wishes are: \"".$firstWish.", ".$secondWish.", ".$defaultWish."\"\n");
+}
+threeWishesFromGenie("Rich", "Handsome");
+```
+
+**Function có giá trị trả về**
+```php
+<?php
+function sayHello($name){
+	$result = "Hello ".$name."\n";
+	return $result;
+}
+
+print(sayHello("PHP"));
+```
 
 **Bài tập**
 
