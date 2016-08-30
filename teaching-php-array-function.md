@@ -138,11 +138,7 @@ print("String reverse: ".strrev($sampleStr)."\n");
 
 ### File
 
-Đọc File
-Ghi file
-Upload file
-
-Ví dụ về đọc/ghi file:
+**Ví dụ về đọc/ghi file:**
 
 Tạo 1 file `sample.txt` với nội dung bên dưới và 1 file sample_new.txt rỗng:
 
@@ -226,7 +222,7 @@ php -nS localhost:8000
 
 Vào địa chỉ `http://localhost:8000/upload_landing.html` để test.
 
-Tham khảo thêm các option tại: http://www.w3schools.com/php/php_file_open.asp
+Tham khảo thêm các option tại: [http://www.w3schools.com/php/php_file_open.asp](http://www.w3schools.com/php/php_file_open.asp)
 
 ### Hàm (function)
 
