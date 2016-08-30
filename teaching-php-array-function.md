@@ -65,6 +65,47 @@ foreach($listItem as $key => $item){
 * `arsort` – Sắp xếp mảng giảm dần dựa vào giá trị (associative array)
 * `krsort` – Sắp xếp mảng giảm dần dựa vào key (associative array)
 
+**Ví dụ**
+
+```php
+<?php
+
+print("============ NORMAL ARRAY EXAMPLE =============\n");
+$listItem = [
+	"Banana",
+	"Pineapple",
+	"Apple",
+	"Jackfruit",
+];
+print("------------ASCENDING SORT------------\n");
+sort($listItem);
+print_r($listItem);
+print("------------DESCENDING SORT------------\n");
+rsort($listItem);
+print_r($listItem);
+
+print("============ ASSOCIATIVE ARRAY EXAMPLE =============\n");
+$listItem = [
+	"key2" => "Banana",
+	"key3" => "Pineapple",
+	"key1" => "Apple",
+	"key4" => "Jackfruit",
+];
+print("------------ASCENDING SORT BY KEY------------\n");
+ksort($listItem);
+print_r($listItem);
+print("------------DESSCENDING SORT BY KEY------------\n");
+krsort($listItem);
+print_r($listItem);
+print("------------ASCENDING SORT BY VALUE------------\n");
+asort($listItem);
+print_r($listItem);
+print("------------DESSCENDING SORT BY VALUE------------\n");
+arsort($listItem);
+print_r($listItem);
+
+```
+
 ### Chuỗi (string)
 
 Xử lý chuỗi là công việc rất phổ biến khi làm lập trình, do đó tuy String là kiểu dữ liệu cơ bản của PHP nhưng được sử dụng rộng rãi nhất và có nhiều tính năng đáng chú ý.
@@ -81,17 +122,75 @@ String được định nghĩa là chuỗi ký tự được bao bởi `"` hoặ
 
 Có 1 sự khác biệt cơ bản giữa chuỗi ký tự `"` và `'` là đối với chuỗi ký tự sử dụng `"`, PHP sẽ parse dữ liệu từ biến số hoặc thay thế các ký tự đặc biệt bắt đầu bằng `\`.
 
+**Ví dụ**
+
+```php
+<?php
+
+$sampleStr = "I love PHP very much!";
+print("Original string: $sampleStr\n");
+print("String length: ".strlen($sampleStr)."\n");
+print("String word count: ".str_word_count($sampleStr)."\n");
+print("Position of PHP: ".strpos($sampleStr, "PHP")."\n");
+print("Replace PHP by Python: ".str_replace("PHP", "Python", $sampleStr)."\n");
+print("String reverse: ".strrev($sampleStr)."\n");
+```
+
 ### File
 
 Đọc File
-	Cú pháp để đọc file
-	Loop tất cả các dòng trong file
 Ghi file
-	Ghi file mới
-	Ghi file đã tồn tại
-Tham khảo thêm các option tại: http://www.w3schools.com/php/php_file_open.asp
 Upload file
 
+Ví dụ về đọc/ghi file:
+
+Tạo 1 file `sample.txt` với nội dung bên dưới và 1 file sample_new.txt rỗng:
+
+```
+key1: value 1
+key2: value 2
+key3: value 3
+key4: value 4
+key5: value 5
+Extra 1: Data 1
+Extra 1: Data 1
+```
+
+Đọc file:
+
+```php
+<?php
+
+$fileName = "sample.txt";
+$myFile = fopen($fileName, "r") or die("Unable to open file!");
+print("---------------READING WHOLE FILE------------------\n");
+print(fread($myFile, filesize($fileName)));
+fclose($myFile);
+
+$myFile = fopen($fileName, "r") or die("Unable to open file!");
+print("---------------READING FILE LINE BY LINE------------------\n");
+while(!feof($myFile)){
+	$lineData = fgets($myFile);
+	print($lineData);
+}
+fclose($myFile);
+```
+
+Ghi file:
+
+```php
+<?php
+
+$oldFile = "sample.txt";
+$newFile = "sample_new.txt";
+$myFile = fopen($newFile, "a") or die("Unable to open file.");
+$newContent = "Extra 1: Data 1\n";
+fwrite($myFile, $newContent);
+fwrite($myFile, $newContent);
+fclose($myFile);
+```
+
+Tham khảo thêm các option tại: http://www.w3schools.com/php/php_file_open.asp
 
 ### Hàm (function)
 
