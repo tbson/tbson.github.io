@@ -137,11 +137,11 @@ Xử lý chuỗi là công việc rất phổ biến khi làm lập trình, do �
 
 **Các tính năng được sử dụng phổ biến của string:**
 
-* strlen() – Lấy độ dài của chuỗi
-* str_word_count() – Đếm số từ trong string (ngăn cách bằng khoảng trống)
-* strrev() – Đảo ngược thứ tự các ký tự trong chuỗi
-* strpos() – Tìm vị trí (index) của ký tự/chuỗi ký tự trong chuỗi khác
-* str_replace() – Thay thế ký tự/chuỗi ký tự
+* `strlen` – Lấy độ dài của chuỗi
+* `str_word_count` – Đếm số từ trong string (ngăn cách bằng khoảng trống)
+* `strrev` – Đảo ngược thứ tự các ký tự trong chuỗi
+* `strpos` – Tìm vị trí (index) của ký tự/chuỗi ký tự trong chuỗi khác
+* `str_replace` – Thay thế ký tự/chuỗi ký tự
 
 String được định nghĩa là chuỗi ký tự được bao bởi `"` hoặc `'`
 
@@ -165,7 +165,7 @@ print("String reverse: ".strrev($sampleStr)."\n");
 
 **Ví dụ về đọc/ghi file:**
 
-Tạo 1 file `sample.txt` với nội dung bên dưới và 1 file sample_new.txt rỗng:
+Tạo 1 file `sample.txt` với nội dung bên dưới và 1 file `sample_new.txt` rỗng:
 
 ```
 key1: value 1
