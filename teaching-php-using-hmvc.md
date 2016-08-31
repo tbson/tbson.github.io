@@ -11,7 +11,11 @@ Tiếp tục bài viết trước: [Chạy Laravel 5.3 và config HMVC (Hierarch
 
 Chúng ta đã có được trang welcome khi vào địa chỉ: `http://9gag.dev` và trang hello category khi vào địa chỉ `http://9gag.dev/category`.
 
-**Nhiệm vụ lần này là chúng ta sẽ xây dựng module tên là `Landing` dùng cho mục đích hiển thị dữ liệu từ model ra trang chủ, dùng link để di chuyển từ  trang chủ qua trang category và ngược lại.**
+**Nhiệm vụ lần này là chúng ta là:**
+
+1. Xây dựng module tên là `Landing` dùng cho các công việc liên quan đến trang chủ.
+2. Hiển thị dữ liệu từ model ra trang chủ.
+3. Dùng link để di chuyển từ  trang chủ qua trang category và ngược lại.
 
 Đầu tiên là tạo module Landing bằng cách copy module Category và đổi tất cả các chữ `Category` thành `Landing` và `category` thành `landing`.
 
