@@ -72,7 +72,7 @@ export PATH=$PATH:~/.composer/vendor/bin/
 Sau dó chạy lệnh:
 
 ```
-source ~/profile
+source ~/.profile
 ```
 
 Và thử lại lệnh `laravel`
