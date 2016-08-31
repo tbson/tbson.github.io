@@ -214,3 +214,35 @@ Thêm link cho trang `index.blade.php` của module `Module`:
 ```
 
 ### Nhiệm vụ 4: Sử dụng tham số từ URL
+
+Trong module Category tạo thêm tính năng cho xem category chi tiết. Trong trường hợp đơn giản nhất là nhận ID từ URL.
+
+Trong `routes.php` của module `Category` cần thêm 1 route mới để đảm được việc xem chi tiết.
+
+```php
+<?php
+
+Route::get("/{id}", [
+    # middle here
+    "as" => "{$module}.detail",
+    "uses" => "{$module}Controller@detail"
+]);
+```
+
+Tạo `detail` controller cho module `Category`:
+
+```php
+<?php
+
+public function detail(Request $request, $id){
+    $data = [];
+    $data['id'] = $id;
+    return view('Category::detail', $data);
+}
+```
+
+Tạo `detail` template với file name: `detail.blade.php` cho module `Category`:
+
+```php
+<h1>Item id: {{$id}}</h1>
+```
