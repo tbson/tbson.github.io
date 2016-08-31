@@ -17,35 +17,6 @@ Mảng có 2 loại là `array` và `associative array`.
 
 Chúng ta có thể dùng vòng lặp để tuần tự lấy các phần tử trong array ra.
 
-**Dùng hàm `count` để lấy độ dài của array.**
-
-```php
-<?php
-$myArray = ['item 1', 'item 2', 'item 3'];
-print_r(count($myArray)); # 3
-```
-
-**Dùng hàm `explode` để băm chuỗi thành mảng bằng delimiter.**
-
-```php
-<?php
-$myString = 'item 1,item 2,item 3';
-$myArray = explode(',', $myString);
-print_r($myArray); # ['item 1', 'item 2', 'item 3']
-
-```
-
-**Dùng hàm `implode` để gộp 1 mảng thành chuỗi thông qua delimiter.**
-
-```php
-<?php
-$myArray = ['item 1', 'item 2', 'item 3'];
-$myString = implode(',', $myArray);
-print_r($myString); # 'item 1,item 2,item 3'
-```
-
-Có thể dùng các hàm có sẵn của PHP để sắp xếp lại thứ tự của các phần tử trong mảng.
-
 **Ví dụ:**
 
 ```php
@@ -80,6 +51,35 @@ foreach($listItem as $key => $item){
 }
 
 ```
+
+**Dùng hàm `count` để lấy độ dài của array.**
+
+```php
+<?php
+$myArray = ['item 1', 'item 2', 'item 3'];
+print_r(count($myArray)); # 3
+```
+
+**Dùng hàm `explode` để băm chuỗi thành mảng bằng delimiter.**
+
+```php
+<?php
+$myString = 'item 1,item 2,item 3';
+$myArray = explode(',', $myString);
+print_r($myArray); # ['item 1', 'item 2', 'item 3']
+
+```
+
+**Dùng hàm `implode` để gộp 1 mảng thành chuỗi thông qua delimiter.**
+
+```php
+<?php
+$myArray = ['item 1', 'item 2', 'item 3'];
+$myString = implode(',', $myArray);
+print_r($myString); # 'item 1,item 2,item 3'
+```
+
+Chúng ta có thể dùng các hàm có sẵn của PHP để sắp xếp lại thứ tự của các phần tử trong mảng.
 
 **Các hàm sắp xếp của PHP:**
 
