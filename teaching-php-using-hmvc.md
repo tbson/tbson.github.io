@@ -110,3 +110,5 @@ Ta có cấu trúc:
 │   └── routes.php
 └── ServiceProvider.php
 ```
+
+Kiểm tra trang chủ `http://9gag.dev` ta sẽ thấy kết quả `Landing page`;
