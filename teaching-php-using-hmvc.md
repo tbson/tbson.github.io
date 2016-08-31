@@ -42,13 +42,13 @@ class Landing extends Model
 ```php
 <?php
 
-namespace App\Modules\Category\Controllers;
+namespace App\Modules\Landing\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 
-class CategoryController extends Controller{
+class LandingController extends Controller{
     /**
      * Create a new authentication controller instance.
      *
@@ -67,6 +67,27 @@ class CategoryController extends Controller{
 
 ```html
 <h1>Landing page</h1>
+```
+
+`routes.php` có nội dung:
+
+```php
+<?php
+
+$namespace = 'App\Modules\Landing\Controllers';
+
+Route::group(['prefix' => ''], function(){
+    $namespace = 'App\Modules\Landing\Controllers';
+    Route::group(
+        ['prefix' => '', 'module'=>'Landing', 'namespace' => $namespace],
+        function() {
+            Route::get('', [
+                'as' => 'index',
+                'uses' => 'LandingController@index'
+            ]);
+        }
+    );
+});
 ```
 
 Ta có cấu trúc:
