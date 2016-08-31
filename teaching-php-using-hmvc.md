@@ -17,6 +17,8 @@ Chúng ta đã có được trang welcome khi vào địa chỉ: `http://9gag.de
 2. Hiển thị dữ liệu từ model ra trang chủ.
 3. Dùng link để di chuyển từ  trang chủ qua trang category và ngược lại.
 
+### Nhiệm vụ 1: Xây dựng module `Landing`
+
 Đầu tiên là tạo module Landing bằng cách copy module Category và đổi tất cả các chữ `Category` thành `Landing` và `category` thành `landing`.
 
 Tạo model `Landing` bằng câu lệnh:
@@ -117,3 +119,8 @@ Ta có cấu trúc:
 
 Kiểm tra trang chủ `http://9gag.dev` ta sẽ thấy kết quả `Landing page`.
 
+### Nhiệm vụ 2: Hiển thị dữ liệu từ model
+
+### Nhiệm vụ 3: Dùng link để di chuyển giữa các trang
+
+### Nhiệm vụ 4: Sử dụng url parameter
