@@ -186,11 +186,6 @@ Route::group(
             "as" => "{$module}.index",
             "uses" => "{$module}Controller@index"
         ]);
-        Route::get("/{id}", [
-            # middle here
-            "as" => "{$module}.detail",
-            "uses" => "{$module}Controller@detail"
-        ]);
     }
 );
 ```
@@ -244,5 +239,5 @@ public function detail(Request $request, $id){
 Tạo `detail` template với file name: `detail.blade.php` cho module `Category`:
 
 ```php
-<h1>Item id: {{$id}}</h1>
+<h1>Item id: \{{$id}}</h1>
 ```
