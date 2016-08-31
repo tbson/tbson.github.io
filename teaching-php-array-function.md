@@ -28,6 +28,7 @@ print_r(count($myArray)); # 3
 **Dùng hàm `explode` để băm chuỗi thành mảng bằng delimiter.**
 
 ```php
+<?php
 $myString = 'item 1,item 2,item 3';
 $myArray = explode(',', $myString);
 print_r($myArray); # ['item 1', 'item 2', 'item 3']
@@ -37,6 +38,7 @@ print_r($myArray); # ['item 1', 'item 2', 'item 3']
 **Dùng hàm `implode` để gộp 1 mảng thành chuỗi thông qua delimiter.**
 
 ```php
+<?php
 $myArray = ['item 1', 'item 2', 'item 3'];
 $myString = implode(',', $myArray);
 print_r($myString); # 'item 1,item 2,item 3'
