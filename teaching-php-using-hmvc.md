@@ -22,6 +22,21 @@ cd /opt/nginx/9gag
 ./artisan make:model Landing && mv app/Landing.php app/Modules/Landing/Models/
 ```
 
+Landing.php có nội dung:
+
+```php
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Landing extends Model
+{
+    //
+}
+```
+
 Ta có cấu trúc:
 
 ```
