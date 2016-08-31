@@ -168,7 +168,7 @@ Kiểm tra trang chủ `http://9gag.dev` ta sẽ thấy danh sách được hi�
 
 ### Nhiệm vụ 3: Dùng link để di chuyển giữa các trang
 
-Sửa routes.php của module Category lại thành dạng:
+Sửa `routes.php` của module `Category` lại thành dạng:
 
 ```php
 <?php
@@ -199,6 +199,18 @@ Từ trang chủ thêm link để tới trang category và từ trang category t
 
 Thêm link cho trang `index.blade.php` của module `Landing`:
 
+```html
+<a href="{!! route('Category.index') !!}">
+    Category page
+</a>
+```
 
+Thêm link cho trang `index.blade.php` của module `Module`:
+
+```html
+<a href="{!! route('Landing.index') !!}">
+    Home
+</a>
+```
 
 ### Nhiệm vụ 4: Sử dụng tham số từ URL
