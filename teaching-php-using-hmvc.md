@@ -151,7 +151,7 @@ public function index(Request $request){
 
 Và cuối cùng là hiển thị dữ liệu trong template `index.blade.php`:
 
-```blade
+```html
 <div>
     <ol>
         @foreach($listItem as $item)
