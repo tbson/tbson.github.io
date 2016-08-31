@@ -168,6 +168,33 @@ Kiểm tra trang chủ `http://9gag.dev` ta sẽ thấy danh sách được hi�
 
 ### Nhiệm vụ 3: Dùng link để di chuyển giữa các trang
 
+Sửa routes.php của module Category lại thành dạng:
+
+```php
+<?php
+
+$prefix = "category";  // URL prefix
+
+$module = basename(__DIR__);
+$namespace = "App\Modules\\{$module}\Controllers";
+
+Route::group(
+    ["prefix" => $prefix, "module" => $module , "namespace" => $namespace],
+    function() use($module){
+        Route::get("/", [
+            # middle here
+            "as" => "{$module}.index",
+            "uses" => "{$module}Controller@index"
+        ]);
+        Route::get("/{id}", [
+            # middle here
+            "as" => "{$module}.detail",
+            "uses" => "{$module}Controller@detail"
+        ]);
+    }
+);
+```
+
 Từ trang chủ thêm link để tới trang category và từ trang category thêm link để về trang chủ:
 
 Thêm link cho trang `index.blade.php` của module `Landing`:
