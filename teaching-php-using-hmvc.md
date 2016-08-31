@@ -9,7 +9,17 @@ share-img: /img/pages/teaching-php/using-hmvc/banner.png
 
 Tiếp tục bài viết trước: [Chạy Laravel 5.3 và config HMVC (Hierarchical model–view–controller)](/teaching-php-laravel-hmvc)
 
-Chúng ta đã có được trang welcome khi vào địa chỉ: `http://9gag.dev`.
+Chúng ta đã có được trang welcome khi vào địa chỉ: `http://9gag.dev` và trang hello category khi vào địa chỉ `http://9gag.dev/category`.
 
 Nhiệm vụ lần này là chúng ta sẽ xây dựng module tên là `Landing` dùng cho mục đích hiển thị dữ liệu ra trang chủ.
 
+Đầu tiên là tạo module Landing bằng cách copy module Category và đổi tất cả các chữ `Category` thành `Landing` và `category` thành `landing`.
+
+Tạo model `Landing` bằng câu lệnh:
+
+```bahs
+cd /opt/nginx/9gag
+./artisan make:model Landing && mv app/Landing.php app/Modules/Landing/Models/
+```
+
+Ta có cấu trúc:
