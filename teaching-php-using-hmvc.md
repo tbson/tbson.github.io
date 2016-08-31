@@ -22,7 +22,7 @@ cd /opt/nginx/9gag
 ./artisan make:model Landing && mv app/Landing.php app/Modules/Landing/Models/
 ```
 
-Landing.php có nội dung:
+`Landing.php` có nội dung:
 
 ```php
 <?php
@@ -35,6 +35,38 @@ class Landing extends Model
 {
     //
 }
+```
+
+`LandingController.php` có nội dung:
+
+```php
+<?php
+
+namespace App\Modules\Category\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+
+class CategoryController extends Controller{
+    /**
+     * Create a new authentication controller instance.
+     *
+     * @return void
+     */
+    public function __construct(){
+        # parent::__construct();
+    }
+    public function index(Request $request){
+        return view('Landing::index');
+    }
+}
+```
+
+`index.blade.php` có nội dung:
+
+```html
+<h1>Landing page</h1>
 ```
 
 Ta có cấu trúc:
