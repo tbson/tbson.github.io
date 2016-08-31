@@ -57,6 +57,26 @@ sudo chmod -R 777 /opt/nginx/9gag/storage
 sudo chmod -R 777 /opt/nginx/9gag/bootstrap/cache
 ```
 
+Vì lý do bí ẩn nào đó mà bạn gặp lỗi **laravel: command not found** thì thực hiện thêm các bước sau:
+
+```
+vim ~/.profile
+```
+
+Thêm nội dung:
+
+```
+export PATH=$PATH:~/.composer/vendor/bin/
+```
+
+Sau dó chạy lệnh:
+
+```
+source ~/profile
+```
+
+Và thử lại lệnh `laravel`
+
 ### Bước 1.4: Sửa file `.env`
 
 Thay đổi các thông số sau:
