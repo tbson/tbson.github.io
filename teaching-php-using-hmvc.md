@@ -81,20 +81,21 @@ class LandingController extends Controller{
 ```php
 <?php
 
-$namespace = 'App\Modules\Landing\Controllers';
+$prefix = "";  // URL prefix
 
-Route::group(['prefix' => ''], function(){
-    $namespace = 'App\Modules\Landing\Controllers';
-    Route::group(
-        ['prefix' => '', 'module'=>'Landing', 'namespace' => $namespace],
-        function() {
-            Route::get('', [
-                'as' => 'index',
-                'uses' => 'LandingController@index'
-            ]);
-        }
-    );
-});
+$module = basename(__DIR__);
+$namespace = "App\Modules\\{$module}\Controllers";
+
+Route::group(
+    ["prefix" => $prefix, "module" => $module , "namespace" => $namespace],
+    function() use($module){
+        Route::get('/', [
+            # middle here
+            "as" => "{$module}.index",
+            "uses" => "{$module}Controller@index"
+        ]);
+    }
+);
 ```
 
 Ta có cấu trúc:
@@ -129,11 +130,11 @@ Tạo function cung cấp dữ liệu trong model `Landing.php`:
 
 public static function list(){
     $result = [
-        ['id' => 1, 'title' => 'Item 1'],
-        ['id' => 2, 'title' => 'Item 2'],
-        ['id' => 3, 'title' => 'Item 3'],
-        ['id' => 4, 'title' => 'Item 4'],
-        ['id' => 5, 'title' => 'Item 5']
+        ['id' => 1, 'title' => 'Category 1'],
+        ['id' => 2, 'title' => 'Category 2'],
+        ['id' => 3, 'title' => 'Category 3'],
+        ['id' => 4, 'title' => 'Category 4'],
+        ['id' => 5, 'title' => 'Category 5']
     ];
     return $result;
 }
@@ -142,6 +143,8 @@ public static function list(){
 Sử dụng dữ liệu này trong controller `LandingController.php`:
 
 ```php
+<?php
+
 public function index(Request $request){
     $data = [];
     $data['listItem'] = Landing::list();
@@ -161,6 +164,14 @@ Và cuối cùng là hiển thị dữ liệu trong template `index.blade.php`:
 </div>
 ```
 
+Kiểm tra trang chủ `http://9gag.dev` ta sẽ thấy danh sách được hiển thị.
+
 ### Nhiệm vụ 3: Dùng link để di chuyển giữa các trang
+
+Từ trang chủ thêm link để tới trang category và từ trang category thêm link để về trang chủ:
+
+Thêm link cho trang `index.blade.php` của module `Landing`:
+
+
 
 ### Nhiệm vụ 4: Sử dụng tham số từ URL
