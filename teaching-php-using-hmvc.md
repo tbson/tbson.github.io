@@ -23,3 +23,22 @@ cd /opt/nginx/9gag
 ```
 
 Ta có cấu trúc:
+
+```
+├── Category
+│   ├── Controllers
+│   │   └── CategoryController.php
+│   ├── Models
+│   ├── Views
+│   │   └── index.blade.php
+│   └── routes.php
+├── Landing
+│   ├── Controllers
+│   │   └── LandingController.php
+│   ├── Models
+│   │   └── Landing.php
+│   ├── Views
+│   │   └── index.blade.php
+│   └── routes.php
+└── ServiceProvider.php
+```
