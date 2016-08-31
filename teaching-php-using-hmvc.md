@@ -16,6 +16,7 @@ Chúng ta đã có được trang welcome khi vào địa chỉ: `http://9gag.de
 1. Xây dựng module tên là `Landing` dùng cho các công việc liên quan đến trang chủ.
 2. Hiển thị dữ liệu từ model ra trang chủ.
 3. Dùng link để di chuyển từ  trang chủ qua trang category và ngược lại.
+4. Sử dụng tham số từ URL.
 
 ### Nhiệm vụ 1: Xây dựng module `Landing`
 
@@ -33,7 +34,7 @@ cd /opt/nginx/9gag
 ```php
 <?php
 
-namespace App;
+namespace App\Modules\Landing\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -121,6 +122,45 @@ Kiểm tra trang chủ `http://9gag.dev` ta sẽ thấy kết quả `Landing pag
 
 ### Nhiệm vụ 2: Hiển thị dữ liệu từ model
 
+Tạo function cung cấp dữ liệu trong model `Landing.php`:
+
+```php
+<?php
+
+public static function list(){
+    $result = [
+        ['id' => 1, 'title' => 'Item 1'],
+        ['id' => 2, 'title' => 'Item 2'],
+        ['id' => 3, 'title' => 'Item 3'],
+        ['id' => 4, 'title' => 'Item 4'],
+        ['id' => 5, 'title' => 'Item 5']
+    ];
+    return $result;
+}
+```
+
+Sử dụng dữ liệu này trong controller `LandingController.php`:
+
+```php
+public function index(Request $request){
+    $data = [];
+    $data['listItem'] = Landing::list();
+    return view('Landing::index', $data);
+}
+```
+
+Và cuối cùng là hiển thị dữ liệu trong template `index.blade.php`:
+
+```blade
+<div>
+    <ol>
+        @foreach($listItem as $item)
+        <li>{{ $item['title'] }}</li>
+        @endforeach
+    </ol>
+</div>
+```
+
 ### Nhiệm vụ 3: Dùng link để di chuyển giữa các trang
 
-### Nhiệm vụ 4: Sử dụng url parameter
+### Nhiệm vụ 4: Sử dụng tham số từ URL
