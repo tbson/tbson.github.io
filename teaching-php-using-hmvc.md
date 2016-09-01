@@ -238,6 +238,8 @@ public function detail(Request $request, $id){
 
 Tạo `detail` template với file name: `detail.blade.php` cho module `Category`:
 
+{% raw %}
 ```html
-<h1>Item id: \{\{$id\}\}</h1>
+<h1>Item id: {{$id}}</h1>
 ```
+{% endraw %}
