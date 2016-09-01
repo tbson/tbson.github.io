@@ -249,5 +249,33 @@ Tạo `detail` template với file name: `detail.blade.php` cho module `Category
 {% raw %}
 ```html
 <h1>Item id: {{$id}}</h1>
+<a href="{!! route('Landing.index') !!}">
+    Home
+</a>
 ```
 {% endraw %}
+
+Đưa link có tham số vào danh sách ở trang chủ trong template `index.blade.php` của module `Landing`.
+
+{% raw %}
+```html
+...
+<div>
+    <ol>
+        @foreach($listItem as $item)
+        <li>
+            <a href="{!! route('Category.detail', $item['title']) !!}">
+                {{ $item['title'] }}
+            </a>
+        </li>
+        @endforeach
+    </ol>
+</div>
+...
+```
+{% endraw %}
+
+Cuối cùng là click vàl từng link ở trang chủ để xem kết quả.
+
+DONE
+
