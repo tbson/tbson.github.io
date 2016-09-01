@@ -277,5 +277,12 @@ Tạo `detail` template với file name: `detail.blade.php` cho module `Category
 
 Cuối cùng là click vàl từng link ở trang chủ để xem kết quả.
 
+
 DONE
 
+<hr/>
+
+**Bài viết liên quan**
+
+1. [Cài môi trường phát triển trên Ubuntu server 16.04](/teaching-php-server-config)
+2. [Chạy Laravel 5.3 và config HMVC (Hierarchical model–view–controller)](/teaching-php-laravel-hmvc)
