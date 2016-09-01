@@ -305,3 +305,12 @@ http://9gag.dev/category
 ```
 
 DONE
+
+<hr/>
+
+**Bài viết liên quan**
+
+1. [Cài môi trường phát triển trên Ubuntu server 16.04](/teaching-php-server-config)
+2. [Kết hợp sử dụng Route, Model, View, Controller trong mô hình HMVC](/teaching-php-using-hmvc)
+
+<br/>

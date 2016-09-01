@@ -287,3 +287,12 @@ Sau đó bạn có thể mount folder nginx chứa source code tại địa ch�
 Đối với Mac/Linux có thể dùng chức năng Connect to server để mount.
 
 DONE!
+
+<hr/>
+
+**Bài viết liên quan**
+
+1. [Chạy Laravel 5.3 và config HMVC (Hierarchical model–view–controller)](/teaching-php-laravel-hmvc)
+2. [Kết hợp sử dụng Route, Model, View, Controller trong mô hình HMVC](/teaching-php-using-hmvc)
+
+<br/>
