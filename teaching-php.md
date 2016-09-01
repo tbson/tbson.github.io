@@ -14,7 +14,7 @@ share-img: /img/pages/teaching-php/banner.jpg
 
 1. [Cài môi trường phát triển trên Ubuntu server 16.04](/teaching-php-server-config)
 2. [Chạy Laravel 5.3 và config HMVC (Hierarchical model–view–controller)](/teaching-php-laravel-hmvc)
-3. Kết hợp sử dụng Route, Model, View, Controller trong mô hình HMVC.
+3. [Kết hợp sử dụng Route, Model, View, Controller trong mô hình HMVC](/teaching-php-using-hmvc)
 4. Phân tích cấu trúc database, chia module cho từng dự án.
 5. Trình tự thực hiện các module trong từng dự án và kiến thức cần nắm để thực hiện.
   * Vấn đề authentication & authorization.
