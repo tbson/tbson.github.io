@@ -128,6 +128,7 @@ Tạo function cung cấp dữ liệu trong model `Landing.php`:
 ```php
 <?php
 
+...
 public static function list(){
     $result = [
         ['id' => 1, 'title' => 'Category 1'],
@@ -156,6 +157,7 @@ Và cuối cùng là hiển thị dữ liệu trong template `index.blade.php`:
 
 {% raw %}
 ```html
+...
 <div>
     <ol>
         @foreach($listItem as $item)
@@ -197,6 +199,7 @@ Từ trang chủ thêm link để tới trang category và từ trang category t
 Thêm link cho trang `index.blade.php` của module `Landing`:
 
 ```html
+...
 <a href="{!! route('Category.index') !!}">
     Category page
 </a>
@@ -205,6 +208,7 @@ Thêm link cho trang `index.blade.php` của module `Landing`:
 Thêm link cho trang `index.blade.php` của module `Module`:
 
 ```html
+...
 <a href="{!! route('Landing.index') !!}">
     Home
 </a>
@@ -219,6 +223,7 @@ Trong `routes.php` của module `Category` cần thêm 1 route mới để đả
 ```php
 <?php
 
+...
 Route::get("/{id}", [
     # middle here
     "as" => "{$module}.detail",
@@ -231,6 +236,7 @@ Tạo `detail` controller cho module `Category`:
 ```php
 <?php
 
+...
 public function detail(Request $request, $id){
     $data = [];
     $data['id'] = $id;
