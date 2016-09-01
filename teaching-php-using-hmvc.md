@@ -154,6 +154,7 @@ public function index(Request $request){
 
 Và cuối cùng là hiển thị dữ liệu trong template `index.blade.php`:
 
+{% raw %}
 ```html
 <div>
     <ol>
@@ -163,6 +164,7 @@ Và cuối cùng là hiển thị dữ liệu trong template `index.blade.php`:
     </ol>
 </div>
 ```
+{% endraw %}
 
 Kiểm tra trang chủ `http://9gag.dev` ta sẽ thấy danh sách được hiển thị.
 
