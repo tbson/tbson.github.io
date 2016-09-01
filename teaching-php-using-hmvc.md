@@ -264,7 +264,7 @@ Tạo `detail` template với file name: `detail.blade.php` cho module `Category
     <ol>
         @foreach($listItem as $item)
         <li>
-            <a href="{!! route('Category.detail', $item['title']) !!}">
+            <a href="{!! route('Category.detail', $item['id']) !!}">
                 {{ $item['title'] }}
             </a>
         </li>
