@@ -146,6 +146,10 @@ Sử dụng dữ liệu này trong controller `LandingController.php`:
 ```php
 <?php
 
+...
+use App\Modules\Landing\Models\Landing;
+...
+
 public function index(Request $request){
     $data = [];
     $data['listItem'] = Landing::list();
