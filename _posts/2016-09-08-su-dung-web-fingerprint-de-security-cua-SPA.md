@@ -10,31 +10,33 @@ share-img: /img/posts/2016-09-08/banner.jpg
 
 SPA được hiểu như phần client (Front-End) được viết hoàn toàn bằng JavaScript, nằm trong các file tĩnh, tương tác với server thông qua các web API.
 
-Do tính độc lập gần như tuyệt đối với server như vậy nên SPA không sử dụng Session để định danh và lưu các thông tin cơ bản của người dùng nên cần 1 cơ chế để server biết request hiện tại là của người dùng nào để xử lý cho phù hợp.
+Do tính độc lập gần như tuyệt đối với server như vậy nên tầng client của SPA không thể sử dụng Session để định danh và lưu các thông tin cơ bản của người dùng nên cần 1 cơ chế khác để server biết request hiện tại là của người dùng nào nhằm xử lý cho phù hợp.
 
 Token ra đời từ nhu cầu này.
 
 **Nguyên tắc hoạt động của token rất đơn giản gồm các bước sau:**
 
 1. User nhập thông tin login ở client, gửi lên server, nếu thành công (khớp username/password) sẽ nhận được vài thông tin cơ bản của người dùng cộng với 1 chuỗi ngẫu nhiên gọi là token. Token này được lưu trong DB gắn liên với user, có thể đại diện user cho những request sau mà không cần nhập lại username/password.
-2. User lưu token này lại ở client (lưu ở localstorage) để dùng đại diện cho tài khoản hiện tại mà không cần phải nhập lại username/password cho các request sau.
+2. User lưu token này lại ở client (lưu ở local storage) để dùng đại diện cho tài khoản hiện tại mà không cần phải nhập lại username/password cho các request sau.
 3. User tiến vào các vùng dành cho người dùng đã authenticate bằng cách gửi kèm token trong mỗi request.
 4. Server nhận được request có đính kèm token sẽ bóc tách token ra, kiểm tra xem token này có tồn tại hay không. Nếu có tồn tại thì còn hạn sử dụng hay không. Nếu còn hạn sử dụng thì trả về dữ liệu mà người dùng yêu cầu. Nếu không thì trả về mã 401 (Unauthorized) để client tiến hành redirect người dùng về trang login để đăng nhập và làm mới token.
 
 **Quy trình trên có 2 nhược điểm:**
 
 1. Luôn phải đính kèm token trong mỗi request -> Nguy cơ bị đánh cắp token bằng phương pháp Man In the Middle.
-2. Phải lưu lại token ở client nếu không muốn cứ mỗi request phải nhập lại username password -> Nguy cơ bị đánh cắp token nếu 1 dịch vụ khác biết được key chứa token trong localstorage của người dùng (rất đơn giản, chỉ thử login sau đó kiểm tra các key trong local storage bằng các Dev Tool của các trình duyệt).
+2. Phải lưu lại token ở client nếu không muốn cứ mỗi request phải nhập lại username password -> Nguy cơ bị đánh cắp token nếu 1 dịch vụ khác biết được key chứa token trong local storage của người dùng (rất đơn giản, chỉ thử login sau đó kiểm tra các key trong local storage bằng các Dev Tool của các trình duyệt).
 
-Để khắc phục 2 nhược điểm trên ta có 2 giải pháp.
+**Để khắc phục 2 nhược điểm trên ta có 2 giải pháp.**
 
 **Giải pháp cho vấn đề bảo mật khi truyền tải token qua Internet:**
 
-Dùng HTTPS. Rất đơn giản, HTTPS sẽ đảm bảo mã hoá dữ liệu khi truyền tải. Nếu 1 website sử dụng HTTPS thì khi có 1 ai đó đứng giữa bắt được request thì cũng gần như không thể giải mã được thông tin trong request đó trừ khi hacker biết được một lỗ hổng bảo mật mới nào đó trong thư viện SSL.
+Dùng HTTPS. Rất đơn giản, HTTPS sẽ đảm bảo mã hoá dữ liệu khi truyền tải.
+
+Nếu 1 website sử dụng HTTPS thì khi có 1 ai đó đứng giữa bắt được request thì cũng gần như không thể giải mã được thông tin trong request đó trừ khi hacker biết được một lỗ hổng bảo mật mới nào đó trong thư viện SSL.
 
 **Giải pháp cho vấn đề lưu trữ token:**
 
-Gửi thêm 1 biến định danh trình duyệt đang sử dụng. Biến này phải được tạo ra trong quá trình gửi request hoặc lưu trong 1 biến của JS (tạm thời) chứ không lưu xuống local storage (có thể bị lấy trộm).
+Gửi thêm 1 thông tin định danh trình duyệt đang sử dụng. Thông tin này phải được tạo ra trong quá trình gửi request hoặc lưu trong 1 biến của JS (tạm thời) chứ không lưu xuống local storage (có thể bị lấy trộm).
 
 Và bắt đầu từ đây, vai trò của web fingerprint được xác định.
 
@@ -83,7 +85,7 @@ Mặc dù các thông số trên rất có thể trùng nhau cho 1 số trườn
 3. Khi chuyển qua mạng (IP) khác.
 4. Khi hết hạn token. Thông thường token sẽ có tuổi thọ là 1 ngày tính từ lần truy cập cuối cùng. Mỗi request thành công thì token đó sẽ được gia hạn thêm 1 ngày.
 
-Phương pháp này rất hữu dụng cho các web app có yêu cầu dạng như: Cho user login vào máy A ở công ty, không thể truy cập ở nơi khác (ở điện thoại hoặc ngoài nơi công sở để đảm bảo dữ liệu ko bị show ra bên ngoài).
+Phương pháp này rất hữu dụng cho các web app có yêu cầu dạng như: **Chỉ cho user login vào máy A ở công ty, không thể truy cập ở nơi khác (ở điện thoại hoặc ngoài nơi công sở để đảm bảo dữ liệu ko bị show ra bên ngoài).**
 
 Dưới đây là source sử dụng thư viện Fingerprint2 và Fetch để tạo function gọi request lên server có đính kèm fingerprint trong ES6.
 
@@ -156,7 +158,7 @@ Hàm gọi ở đây hơi phức tạp vì thư viện Fingerprint2 trả về k
 3. Thêm logic của hàm fetch dữ liệu thành tham số đầu vào của hàm `checkFingerprint` và return hàm này trong hàm apiPost thì ta có được 1 hàm gọi API và trả về 1 Promise để sử dụng:
 
 ```javascript
-import Tools from '<duong dan toi file>/Tools';
+import Tools from 'duong_dan_toi_file/Tools';
 
 let apiUrl = {
 	url: 'http://test.dev/api/v1/user/authenticate',
