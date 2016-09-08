@@ -135,11 +135,11 @@ export default class Tools {
 						"fingerprint": fingerprint
 					},
 					credentials: "same-origin"
-				}).then(function(response) {
-					response.text().then(function(responseText) {
+				}).then((response) => {
+					response.text().then((responseText) => {
 						resolve(JSON.parse(responseText));
 					});
-				}, function(error) {
+				}, (error) => {
 					resolve(error);
 				});
 			}, arguments);
