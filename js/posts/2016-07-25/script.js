@@ -7,7 +7,7 @@ window.onload = function(){
     var data = [
     	{
 	    	id: 'a1',
-	    	tooltip: '<strong>Căn A1 (03)</strong> <br/>Diện tích: <em>80.74m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 11px"><strong>Căn A1 (03)</strong> <br/>Diện tích: <em>80.74m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A1 (03)',
 	    	slideImg: [
 	    		'xuanmai-03-1.jpg',
