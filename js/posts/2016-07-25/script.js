@@ -7,7 +7,7 @@ window.onload = function(){
     var data = [
     	{
 	    	id: 'a1',
-	    	tooltip: '<span style="font-size: 11px"><strong>Căn A1 (03)</strong> <br/>Diện tích: <em>80.74m<sup>2</sup></em></span>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn A1 (03)</strong> <br/>Diện tích: <em>80.74m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A1 (03)',
 	    	slideImg: [
 	    		'xuanmai-03-1.jpg',
@@ -19,7 +19,7 @@ window.onload = function(){
 	    	]
     	}, {
 	    	id: 'a2',
-	    	tooltip: '<strong>Căn A2 (04)</strong> <br/>Diện tích: <em>67.12m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn A2 (04)</strong> <br/>Diện tích: <em>67.12m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A2 (04)',
 	    	slideImg: [
 	    		'xuanmai-04-1.jpg',
@@ -31,7 +31,7 @@ window.onload = function(){
 	    	]
     	}, {
 	    	id: 'a31',
-	    	tooltip: '<strong>Căn A3 (05)</strong> <br/>Diện tích: <em>61.37m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn A3 (05)</strong> <br/>Diện tích: <em>61.37m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A3 (05)',
 	    	slideImg: [
 	    		'xuanmai-05-1.jpg',
@@ -43,7 +43,7 @@ window.onload = function(){
 	    	]
     	}, {
 	    	id: 'a32',
-	    	tooltip: '<strong>Căn A3 (06)</strong> <br/>Diện tích: <em>61.37m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn A3 (06)</strong> <br/>Diện tích: <em>61.37m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A3 (06)',
 	    	slideImg: [
 	    		'xuanmai-06-1.jpg',
@@ -55,7 +55,7 @@ window.onload = function(){
 	    	]
     	}, {
 	    	id: 'a4',
-	    	tooltip: '<strong>Căn A4 (07)</strong> <br/>Diện tích: <em>45.22m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn A4 (07)</strong> <br/>Diện tích: <em>45.22m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A4 (07)',
 	    	slideImg: [
 	    		'xuanmai-07-1.jpg'
@@ -65,7 +65,7 @@ window.onload = function(){
 	    	]
     	}, {
 	    	id: 'a5',
-	    	tooltip: '<strong>Căn 5A (08)</strong> <br/>Diện tích: <em>75.90m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn 5A (08)</strong> <br/>Diện tích: <em>75.90m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ 5A (08)',
 	    	slideImg: [
 	    		'xuanmai-08-1.jpg',
@@ -77,7 +77,7 @@ window.onload = function(){
 	    	]
     	}, {
 	    	id: 'a6',
-	    	tooltip: '<strong>Căn A6 (09)</strong> <br/>Diện tích: <em>76.29m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn A6 (09)</strong> <br/>Diện tích: <em>76.29m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A6 (09)',
 	    	slideImg: [
 	    		'xuanmai-09-1.jpg'
@@ -87,7 +87,7 @@ window.onload = function(){
 	    	]
     	}, {
 	    	id: 'a71',
-	    	tooltip: '<strong>Căn A7 (10)</strong> <br/>Diện tích: <em>90.83m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn A7 (10)</strong> <br/>Diện tích: <em>90.83m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A7 (10)',
 	    	slideImg: [
 	    		'xuanmai-10-1.jpg'
@@ -97,7 +97,7 @@ window.onload = function(){
 	    	]
     	}, {
 	    	id: 'a72',
-	    	tooltip: '<strong>Căn A7 (01)</strong> <br/>Diện tích: <em>90.69m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn A7 (01)</strong> <br/>Diện tích: <em>90.69m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A7 (01)',
 	    	slideImg: [
 	    		'xuanmai-01-1.jpg',
@@ -109,7 +109,7 @@ window.onload = function(){
 	    	]
     	}, {
 	    	id: 'a8',
-	    	tooltip: '<strong>Căn A8 (02)</strong> <br/>Diện tích: <em>78.95m<sup>2</sup></em>',
+	    	tooltip: '<span style="font-size: 10px"><strong>Căn A8 (02)</strong> <br/>Diện tích: <em>78.95m<sup>2</sup></em></span>',
 	    	title: 'Căn hộ A8 (02)',
 	    	slideImg: [
 	    		'xuanmai-02-1.jpg',
