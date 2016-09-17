@@ -26,7 +26,7 @@ subtitle: Cán bộ ghi nước dùng app di động để ghi số nước, ch�
 
 **[Mobile] Ghi thông tin**
 
-![Quản lý ghi số nước - ghi thông tin](/img/pages/water/water-ghi-thong-tin.jpg)
+![Quản lý ghi số nước - ghi thông tin](/img/pages/water/water-ghi-thong-tin1.jpg)
 
 **[Mobile] Xem lịch sử**
 
