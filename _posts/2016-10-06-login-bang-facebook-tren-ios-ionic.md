@@ -78,9 +78,9 @@ cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="123456789"
 
 ## Bước 3: Config Xcode
 
-Mở chế độ ON cho Capabilities -> Keychain Sharing
+Mở chế độ ON cho **Capabilities -> Keychain Sharing**
 
-[Keychain Sharing](/img/posts/2016-10-06/keychain-enable.jpg)
+![Keychain Sharing](/img/posts/2016-10-06/keychain-enable.jpg)
 
 ## Bước 4: Chạy thử:
 
