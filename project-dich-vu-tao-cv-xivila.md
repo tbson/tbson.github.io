@@ -18,6 +18,8 @@ subtitle: XIVILA là dự án tạo CV tự động giúp người dùng tạo �
 8. Bookmark lại các bài viết hoặc tài khoản mình quan tâm.
 9. Tạo website cá nhân dựa trên các thông tin về CV chính và blog. Người dùng có thể chọn nhiều mẫu website khác nhau. Hỗ trợ trỏ tên miền riêng.
 
+**Demo:** [https://xivila.com](https://xivila.com)
+
 ### Ảnh minh hoạ
 
 **Trang chủ**
@@ -43,5 +45,3 @@ subtitle: XIVILA là dự án tạo CV tự động giúp người dùng tạo �
 
 **Trang talks**
 ![Dịch vụ tạo CV XIVILA - trang talks](/img/pages/xivila/xivila-talks.jpg)
-
-**Demo:** [https://xivila.com](https://xivila.com)

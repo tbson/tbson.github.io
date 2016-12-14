@@ -16,6 +16,8 @@ subtitle: Mô tả chi tiết dự án thành 5 mục chính. admin chủ độn
 6. Viết blog giới thiệu các thông tin thêm về dự án.
 7. Hỗ trợ SEO on-page và chia sẻ trên mạng xã hội.
 
+**Demo:** [http://xuanmai.online](http://xuanmai.online)
+
 ### Ảnh minh hoạ
 
 **Banner trang chủ**
