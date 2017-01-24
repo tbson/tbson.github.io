@@ -35,15 +35,15 @@ Let's begin with an ordinary ReactJS app, the index.html file:
 </html>
 ```
 
-bundle.js is the output file when we compile source code with webpack or something else.
+```bundle.js``` is the output file when we compile source code with webpack or something else.
 
 If this file servered by web server (Nginx or Apache...) then we can do anything.
 
 But if we render this file by a web framework, we can insert the init data to this file and components inside bundle.js can reach that init data. In this case, I use Laravel framework.
 
-Let's put that bundle HTML to a blade template:
+Let's put that bundle HTML in to a blade template:
 
-
+{% raw %}
 ```html
 <!DOCTYPE html>
 <html lang="vi">
@@ -60,6 +60,7 @@ Let's put that bundle HTML to a blade template:
     </body>
 </html>
 ```
+{% endraw %}
 
 The most important thing is here: ```window.initData = {!! $initData !!};```
 
