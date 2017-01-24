@@ -170,3 +170,11 @@ Render:
 </div>
 ```
 {% endraw %}
+
+Then I use **Fetch as Google** tool: ```https://support.google.com/webmasters/answer/6066468?hl=en``` to see the final result:
+
+This is the result when open that url by browser:
+![Normal](/img/posts/2017-01-24/web-render.jpg)
+
+This is the result when check by Fetch as Google tool:
+![Google bot](/img/posts/2017-01-24/bot-render.jpg)
