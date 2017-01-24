@@ -109,3 +109,22 @@ Route::group(["prefix" => "admin"],
     }
 );
 ```
+
+When user navigate to: ```http://mydomain.com/admin/login``` then the template above will render.
+
+In ```bundle.js``` I use ```react-redux-router```, you can use ```react-router``` only.
+
+The route of login component must the same with current laravel route: ```/admin/login```
+
+{% raw %}
+```html
+...
+<Route path="admin" component={App} onChange={onChange} onEnter={onEnter}>
+    <Route
+        path="login"
+        component={Login}
+        params={{login: false}}></Route>
+</Route>
+...
+```
+{% endraw %}
