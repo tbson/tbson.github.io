@@ -173,8 +173,18 @@ Render:
 
 Then I use **Fetch as Google** tool: ```https://support.google.com/webmasters/answer/6066468?hl=en``` to see the final result:
 
-This is the result when open that url by browser:
+**This is the result when open that url by browser:**
 ![Normal](/img/posts/2017-01-24/web-render.jpg)
 
-This is the result when check by Fetch as Google tool:
+**This is the result when check by Fetch as Google tool:**
 ![Google bot](/img/posts/2017-01-24/bot-render.jpg)
+
+We can see Google bot can not see the right column (get data by call Ajax) but can render exactly data get direct from server.
+
+With this technique. We can developing an SPA with SEO friendly and got init data as soon as it rendered.
+
+The good part of this technique is we can apply it to any web framework you love, not restrict to NodeJs.
+
+The bad part is we have to build 2 route lists, one in Laravel and one in React app.
+
+DONE.
