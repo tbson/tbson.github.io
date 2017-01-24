@@ -64,3 +64,48 @@ Let's put that bundle HTML in to a blade template:
 
 The most important thing is here: ```window.initData = {!! $initData !!};```
 
+Components inside ```bundle.js``` can ```access window.initData``` variable.
+
+This template rendered by a controller:
+
+```php
+<?php
+namespace App\Modules\Backend\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Helpers\Tools;
+use App\Helpers\ValidateTools;
+use App\Modules\Config\Models\Config;
+
+class BackendController extends Controller{
+    /**
+     * Create a new authentication controller instance.
+     *
+     * @return void
+     */
+    public function __construct(){
+        # parent::__construct();
+    }
+
+    public function login(Request $request){
+        $data = [];
+        $data["initData"] = Config::list(); // Get some data from config table
+        return view('Backend::main', ValidateTools::toJson($data));
+    }
+}
+```
+
+This controller used by a route:
+
+```php
+<?php
+
+Route::group(["prefix" => "admin"],
+    function() {
+        $module = "Backend";
+        $controller = "\App\Modules\\{$module}\Controllers\\{$module}Controller";
+        Route::get("login", ["uses" => "{$controller}@login"]);
+    }
+);
+```
