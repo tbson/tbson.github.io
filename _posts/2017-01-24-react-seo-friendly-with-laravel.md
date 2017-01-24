@@ -18,7 +18,7 @@ They can parse JS app (that's amazing) but they still lazy because they just gra
 
 At least, SE can see init result of your SPA app then why not we provide our JS app the init data rendered directly from server? If this circumstance happen, SE can see all what you want them see, that's our goal.
 
-Let's begin with an ordinary ReactJS app:
+Let's begin with an ordinary ReactJS app, the index.html file:
 
 
 ```html
@@ -34,3 +34,32 @@ Let's begin with an ordinary ReactJS app:
     </body>
 </html>
 ```
+
+bundle.js is the output file when we compile source code with webpack or something else.
+
+If this file servered by web server (Nginx or Apache...) then we can do anything.
+
+But if we render this file by a web framework, we can insert the init data to this file and components inside bundle.js can reach that init data. In this case, I use Laravel framework.
+
+Let's put that bundle HTML to a blade template:
+
+
+```html
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Title</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript">
+            window.initData = {!! $initData !!};
+        </script>
+        <script src="{{config('app.client_url')}}"></script>
+    </body>
+</html>
+```
+
+The most important thing is here: ```window.initData = {!! $initData !!};```
+
