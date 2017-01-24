@@ -110,8 +110,6 @@ Route::group(["prefix" => "admin"],
 );
 ```
 
-When user navigate to: ```http://mydomain.com/admin/login``` then the template above will render.
-
 In ```bundle.js``` I use ```react-redux-router```, you can use ```react-router``` only.
 
 The route of login component must the same with current laravel route: ```/admin/login```
@@ -126,5 +124,213 @@ The route of login component must the same with current laravel route: ```/admin
         params={{login: false}}></Route>
 </Route>
 ...
+```
+{% endraw %}
+
+When user navigate to: ```http://mydomain.com/admin/login``` then ```Login``` component will show up.
+
+My ```Login``` component source code is:
+
+
+{% raw %}
+```jsx
+
+import React from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+// import Modal from 'react-modal';
+
+import { SubmissionError, reset } from 'redux-form';
+import md5 from 'blueimp-md5';
+
+import * as actionCreators from 'app/actions/actionCreators';
+import FormLogin from './forms/FormLogin';
+import FormResetPassword from './forms/FormResetPassword';
+import Tools from 'helpers/Tools';
+import {apiUrls, labels} from './_data';
+import {apiUrls as configApiUrls} from 'components/config/_data';
+import store from 'app/store';
+
+import CustomModal from 'utils/components/CustomModal';
+
+
+class Login extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            resetPasswordModal: false,
+            serverString: '',
+            serverData: [],
+            fetchResponse: []
+        };
+    }
+
+    componentDidMount(){
+        document.title = "Login";
+
+        if(window.initData){
+            this.setState({serverData: window.initData.data.items});
+        }
+
+        Tools.apiCall(configApiUrls.list, {}, false).then((result) => {
+            if(result.success){
+                this.setState({fetchResponse: result.data.items})
+            }
+        });
+    }
+
+    loginHandle(eventData, dispatch){
+        try{
+            const params = {
+                ...eventData,
+                password: md5(eventData.password)
+            };
+            return Tools.apiCall(apiUrls.authenticate, params).then((result) => {
+                if(result.success){
+                    Tools.setStorage('authData', result.data);
+                    dispatch(reset('FormLogin'));
+                    Tools.goToUrl();
+                }else{
+                    throw new SubmissionError(Tools.errorMessageProcessing(result.message));
+                }
+            });
+        }catch(error){
+            console.error(error);
+        }
+    }
+
+    resetPasswordHandle(eventData, dispatch){
+        try{
+            const params = {
+                ...eventData,
+                password: md5(eventData.password)
+            };
+            if(eventData.password !== eventData.newPassword){
+                return Tools.sleep().then(() => {
+                    throw new SubmissionError(Tools.errorMessageProcessing('Passwords not matched!'));
+                });
+            }
+            return Tools.apiCall(apiUrls.resetPassword, params).then((result) => {
+                if(result.success){
+                    this.toggleModal('resetPasswordModal', false);
+                }else{
+                    throw new SubmissionError(Tools.errorMessageProcessing(result.message));
+                }
+            });
+        }catch(error){
+            console.error(error);
+        }
+    }
+
+    toggleModal(state, value=true){
+        let newState = {};
+        newState[state] = value;
+        this.setState(newState);
+    }
+
+    render() {
+        return (
+            <div className="row">
+                <div className="col-md-6 col-md-offset-3">
+
+                    <div className="well">
+                        <p>
+                            <strong>
+                                Login Form
+                            </strong>
+                        </p>
+
+                        <p>
+                            Please enter your username as email & password.
+                        </p>
+
+                        <FormLogin
+                            checkSubmit={this.loginHandle.bind(this)}
+                            labels={labels.login}
+                            submitTitle="Login">
+                            <button
+                                type="button"
+                                className="btn btn-warning"
+                                onClick={() => this.toggleModal('resetPasswordModal')}>
+                                Forgot password
+                            </button>
+                        </FormLogin>
+
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <ul>
+                                    {this.state.serverData.map( (item, index) =>{
+                                        return <li key={index}>{item.uid}</li>
+                                    })}
+                                </ul>
+                            </div>
+                            <div className="col-sm-6">
+                                <ul>
+                                    {this.state.fetchResponse.map( (item, index) =>{
+                                        return <li key={index}>{item.uid}</li>
+                                    })}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <CustomModal
+                        open={this.state.resetPasswordModal}
+                        close={() => this.toggleModal('resetPasswordModal', false)}
+                        size="md"
+                        title="Reset password"
+                        >
+                        <div>
+                            <div className="custom-modal-content">
+                                <FormResetPassword
+                                    checkSubmit={this.resetPasswordHandle.bind(this)}
+                                    labels={labels.resetPassword}
+                                    submitTitle="Reset password">
+
+                                    <button
+                                        type="button"
+                                        className="btn btn-warning cancel"
+                                        onClick={() => this.toggleModal('resetPasswordModal', false)}>
+                                        <span className="glyphicon glyphicon-remove"></span> &nbsp;
+                                        Cancel
+                                    </button>
+                                </FormResetPassword>
+                            </div>
+                        </div>
+                    </CustomModal>
+                </div>
+            </div>
+        );
+    }
+}
+
+Login.propTypes = {
+};
+
+Login.defaultProps = {
+};
+
+function mapStateToProps(state){
+    return {
+    }
+}
+
+function mapDispatchToProps(dispatch){
+    return {
+        ...bindActionCreators(actionCreators, dispatch),
+        resetForm: (formName) => {
+            dispatch(reset(formName));
+        }
+    };
+}
+
+Login = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Login);
+
+export default Login;
+
+
 ```
 {% endraw %}
