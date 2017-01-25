@@ -6,7 +6,7 @@ bigimg: /img/posts/2017-01-24/banner.jpg
 share-img: /img/posts/2017-01-24/banner.jpg
 ---
 
-When developing SPA (Single Page Application), the most headache thing are SEO and blank page (waiting spinner) as page first loaded.
+When developing SPA (Single Page Application), the most headache things are SEO and blank page (waiting spinner) as page first loaded.
 
 SEO in SPA is tricky with many methods. Sometimes, we think about switching to NodeJs with Isomorphic (Same code base share between client and server with server rendering JS).
 
