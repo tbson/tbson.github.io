@@ -27,7 +27,7 @@ navbar-links:
   # Dự án tiêu biểu: "http://deanattali.com"
   Đào tạo:
     - PHP: "teaching-php"
-  Dự án tiêu biểu: "projects"
+  # Dự án tiêu biểu: "projects"
   Tác giả: "aboutme"
 
 include: ['_pages']
