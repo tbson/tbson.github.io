@@ -1,4 +1,5 @@
 ---
+permalink: "/aboutme/"
 layout: page
 title: Trần Bắc Sơn
 subtitle: Fullstack Web/Mobile Developer
