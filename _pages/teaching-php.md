@@ -1,4 +1,5 @@
 ---
+permalink: "/teaching-php/"
 layout: page
 title: Thực hành PHP.
 subtitle: Quy trình thực hành build trang web dạng 9gag và trang web giới thiệu đặc sản.

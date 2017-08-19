@@ -1,4 +1,5 @@
 ---
+permalink: "/teaching-php-laravel-hmvc/"
 layout: page
 title: Install Laravel 5.3 và config HMVC.
 subtitle: HMVC (Hierarchical model–view–controller) giúp ứng dụng cấu trúc theo dạng module, thuận tiện cho việc quản lý code khi ứng dụng trỡ nên phức tạp và chia sẻ code trong nhóm.

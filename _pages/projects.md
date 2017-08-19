@@ -1,4 +1,5 @@
 ---
+permalink: "/projects/"
 layout: page
 title: Danh sách các dự án tiêu biểu.
 subtitle: Các dự án tiêu biểu mà tôi đã từng làm cho cty mình và cho cty khách hàng.

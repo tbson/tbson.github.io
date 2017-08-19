@@ -1,4 +1,5 @@
 ---
+permalink: "/project-web-bds-xuan-mai/"
 layout: page
 title: Dự án trang giới thiệu dự án bất động sản Xuân Mai RiverSide.
 subtitle: Mô tả chi tiết dự án thành 5 mục chính. admin chủ động tuỳ chỉnh banner, bản đồ. Chat hỗ trợ trực tuyến.
