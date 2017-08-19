@@ -25,8 +25,16 @@ description: A virtual proof that tbson is awesome!
 # List of links in the navigation bar
 navbar-links:
   # Dự án tiêu biểu: "http://deanattali.com"
+  Client:
+    - Javascript: 'javascript'
+    - React: 'reactjs'
+  Server:
+    - PHP: 'php'
+    - Laravel: 'laravel'
+    - Database: 'database'
   Đào tạo:
     - PHP: "teaching-php"
+    - Project: 'projects'
   # Dự án tiêu biểu: "projects"
   Tác giả: "aboutme"
 
