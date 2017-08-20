@@ -57,3 +57,6 @@ Dữ liệu trong CouchDB được lưu trữ trong các document. Bạn có th�
 
 Để giải quyết vấn đề này, CouchDB sử dụng mô hình View. View là 1 phương pháp tổng hợp dữ liệu trong các document ở 1 database. Các View được build động và không ảnh hưởng đến dữ liệu đã ghi của các document nên chúng ta có thể có bao nhiêu View tuỳ ý tuỳ vào nhu cầu trình bày dữ liệu.
 
+* Prev: [Các hướng dẫn về database](/database)
+* Next: [Đọc và ghi dữ liệu](/db-couchdb-doc-va-ghi-du-lieu)
+
