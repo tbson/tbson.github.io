@@ -253,23 +253,23 @@ ADD . /code/
 
 Nội dung file `docker-compose.yml` là 1 trong 3 file `.dev.yml`, `.sta.yml` và `.pro.yml`
 
-## Download `wait-for-it` script:
+### Download `wait-for-it` script:
 
 ```bash
 cd ~/Code/project1/utils
 git clone https://github.com/vishnubob/wait-for-it.git && cp ./wait-for-it/wait-for-it.sh ./ && chmod +x wait-for-it.sh && rm -rf wait-for-it
 ```
 
- ## Init Django project
+### Init Django project
 
- ```bash
+```bash
 cd ~/Code/project1
- docker-compose run web django-admin.py startproject src .
- ```
+docker-compose run web django-admin.py startproject src .
+```
 
- ## Link Nginx configuration file
+### Link Nginx configuration file
 
- ```bash
- cd ~/Code/nginx/conf.d
- ln ~/Code/project1/configs/nginx.conf project1.conf
- ```
+```bash
+cd ~/Code/nginx/conf.d
+ln ~/Code/project1/configs/nginx.conf project1.conf
+```
