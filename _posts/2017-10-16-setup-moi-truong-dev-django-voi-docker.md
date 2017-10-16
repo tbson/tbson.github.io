@@ -8,13 +8,13 @@ share-img: /img/posts/2017-10-16/docker-django.jpg
 
 Mục tiêu khi viết bài này của tôi là để mở rộng bài viết [Docker & PHP](/2017-08-30-su-dung-docker-cai-dat-moi-truong-phat-trien-php-laravel/)
 
-Bài viết trên mô tả vắn tắt cách setup môi trường cho 1 dự án PHP (Laravel) dùng Nginx và Postgres. Giới hạn của bài viết này là mỗi môi trường phát triển đều có 1 Nginx proxi riêng.
+Bài viết trên mô tả vắn tắt cách setup môi trường cho 1 dự án PHP (Laravel) dùng Nginx và Postgres. Giới hạn của bài viết này là mỗi môi trường phát triển đều có 1 Nginx proxy riêng.
 
 Điều này sẽ không thành vấn đề nếu dự án của chúng ta chỉ bó gọn trong mỗi docker container và không tương tác với nhau.
 
 Nếu chúng ta chạy 1 lần 2 dự án thì URL của dự án thứ 2 không thể là port 80 vì container trước đã dùng.
 
-Điều này có thể chấp nhận khi phát triển nhưng không thể chấp nhận trong khi đưa lên production.
+Điều này có thể chấp nhận khi phát triển nhưng không thể chấp nhận khi đưa lên production.
 
 Mục tiêu của docker là giảm thiểu công sức config dự án cả ở local lẫn ở production nên chúng ta cần 1 giải pháp khác.
 
@@ -22,7 +22,7 @@ Giải pháp được mình đề xuất là:
  - Nginx sẽ là 1 container riêng
  - Mỗi dự án sẽ là 1 container riêng, có nginx config riêng.
  - Tất cả dùng chung 1 network
- - Mỗi khi có dự án mới, chúng ta chỉ đơn giản là tạo 1 link từ file .config của từng dự án đến volume của Nginx container
+ - Mỗi khi có dự án mới, chúng ta chỉ đơn giản là tạo 1 link từ file `nginx.conf` của từng dự án đến volume của Nginx container
 
 Phương án này đã giải quyết triệt để vấn đề nhiều dự án cùng chạy trên 1 máy.
 
