@@ -315,3 +315,11 @@ docker-compose up -d
 cd ~/Code/project1/
 docker-compose up
 ```
+
+### Kiểm tra trên trình duyệt:
+
+```
+http://project1.dev
+```
+
+DONE!
