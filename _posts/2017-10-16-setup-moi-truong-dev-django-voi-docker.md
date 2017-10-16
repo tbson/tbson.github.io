@@ -2,7 +2,7 @@
 layout: post
 title: Setup môi trường dev Django với Docker
 subtitle: Sử dụng Docker để cài đặt môi trường phát triển Django (Nginx, Python, Django, PostgreSQL)
-bigimg: /img/posts/2017-08-30/docker-django.jpg
+bigimg: /img/posts/2017-10-16/docker-django.jpg
 share-img: /img/posts/2017-10-16/docker-django.jpg
 ---
 
