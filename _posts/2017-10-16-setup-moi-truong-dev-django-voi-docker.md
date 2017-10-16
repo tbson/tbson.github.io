@@ -131,7 +131,7 @@ dbdata/*
 # nginx.conf
 server {
   listen 80;
-  server_name thuenha.dev;
+  server_name project1.dev;
   charset utf-8;
 
   location / {
@@ -272,4 +272,30 @@ docker-compose run web django-admin.py startproject src .
 ```bash
 cd ~/Code/nginx/conf.d
 ln ~/Code/project1/configs/nginx.conf project1.conf
+```
+
+### Thêm project1.dev vào file hosts
+
+```
+127.0.0.1         project1.dev
+```
+
+### Tạo proxy network
+
+```
+docker network create common_proxy
+```
+
+### Chạy nginx
+
+```
+cd ~/Code/nginx/
+docker-compose up -d
+```
+
+### Chạy Django
+
+```
+cd ~/Code/project1/
+docker-compose up
 ```
