@@ -100,3 +100,153 @@ server {
   }
 }
 ```
+
+## Bước 2: Setup Django container
+
+Folder `project1` có cấu trúc sau:
+
+```
+├── .gitignore
+├── configs
+│   └── nginx.conf  # Nginx config
+├── dbdata  # Chứa DB
+├── utils  # Chứa các script cần thiết
+├── docker-compose.dev.yml
+├── docker-compose.pro.yml
+├── docker-compose.sta.yml
+├── docker-compose.yml
+├── requirements.txt  # Danh sách các package cần cho Django project
+└── web.dockerfile
+```
+
+Nội dung các file
+
+```
+# .gitignore
+docker-compose.yml
+dbdata/*
+```
+
+```
+# nginx.conf
+server {
+  listen 80;
+  server_name thuenha.dev;
+  charset utf-8;
+
+  location / {
+    proxy_pass http://web:8001;
+    proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  }
+}
+```
+
+```
+# docker-compose.dev.yml
+version: '2'
+
+networks:
+  proxy:
+    external:
+      name: common_proxy
+
+services:
+  db:
+    container_name: thuenha_db
+    image: "postgres:latest"
+    environment:
+        - POSTGRES_USER=docker
+        - POSTGRES_PASSWORD=docker
+        - POSTGRES_DB=docker
+    ports:
+        - "5433:5432"
+    expose:
+        - "5432"
+    volumes:
+        - ./dbdata:/var/lib/postgresql/data/
+    networks:
+      - proxy
+  web:
+    container_name: thuenha_web
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    command: bash -c "./utils/wait-for-it.sh db:5432 -- python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8001"
+    volumes:
+      - .:/code
+    expose:
+      - "8001"
+    ports:
+      - "8001:8001"
+    depends_on:
+      - "db"
+    networks:
+      - proxy
+```
+
+```
+# docker-compose.sta.yml
+# docker-compose.pro.yml
+version: '2'
+
+networks:
+  proxy:
+    external:
+      name: common_proxy
+
+services:
+  db:
+    container_name: thuenha_db
+    image: "postgres:latest"
+    environment:
+        - POSTGRES_USER=docker
+        - POSTGRES_PASSWORD=docker
+        - POSTGRES_DB=docker
+    ports:
+        - "5433:5432"
+    expose:
+        - "5432"
+    volumes:
+        - ./dbdata:/var/lib/postgresql/data/
+    networks:
+      - proxy
+  web:
+    container_name: thuenha_web
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    command: bash -c "./utils/wait-for-it.sh db:5432 -- python3 manage.py makemigrations && python3 manage.py migrate && gunicorn src.wsgi -b 0.0.0.0:8001"
+    volumes:
+      - .:/code
+    expose:
+      - "8001"
+    ports:
+      - "8001:8001"
+    depends_on:
+      - "db"
+    networks:
+      - proxy
+```
+
+```
+# requirements.txt
+Django>=1.8,<2.0
+gunicorn==19.7.1
+psycopg2
+djangorestframework
+markdown
+django-filter
+```
+
+```
+# web.dockerfile
+FROM python:3
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /code
+WORKDIR /code
+ADD ./requirements.txt /code/
+RUN pip install -r requirements.txt
+ADD . /code/
+```
