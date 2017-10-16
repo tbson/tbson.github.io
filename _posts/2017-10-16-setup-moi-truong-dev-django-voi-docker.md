@@ -2,7 +2,7 @@
 layout: post
 title: Setup môi trường dev Django với Docker
 subtitle: Sử dụng Docker để cài đặt môi trường phát triển Django (Nginx, Python, Django, PostgreSQL)
-bigimg: /img/posts/2017-08-30/docker-php.png
+bigimg: /img/posts/2017-08-30/docker-django.jpg
 share-img: /img/posts/2017-10-16/docker-django.jpg
 ---
 
@@ -30,13 +30,15 @@ Và sau đây là các bước thực hiện:
 
 Giả sử trong `Home` của bạn có 1 folder tên là `Code`, folder này chứa tất cả mọi thứ liên quan tới bài viết này.
 
+## Bước 1: Setup Nginx container
+
 Tạo 1 folder cho Nginx container
 
 ```bash
 mkdir ~/Code/nginx
 ```
 
-và folder `nginx` có cấu trúc sau:
+Folder `nginx` có cấu trúc sau:
 
 ```
 └── nginx
@@ -48,7 +50,7 @@ và folder `nginx` có cấu trúc sau:
 
 Lần lượt các file có nội dung như sau:
 
-```YAML
+```
 version: '2'
 # docker-compose.yml
 networks:
