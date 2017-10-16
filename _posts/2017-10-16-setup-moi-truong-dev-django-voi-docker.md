@@ -267,6 +267,22 @@ cd ~/Code/project1
 docker-compose run web django-admin.py startproject src .
 ```
 
+### Cập nhật các biến sau trong src/settings.py
+
+```python
+ALLOWED_HOSTS = ['project1.dev']
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': 'docker',
+        'PASSWORD': 'docker',
+        'NAME': 'docker',
+        'HOST': 'db',
+        'PORT': 5432,
+    }
+}
+```
+
 ### Link Nginx configuration file
 
 ```bash
