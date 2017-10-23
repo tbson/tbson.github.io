@@ -13,3 +13,23 @@ share-img: /img/posts/2017-10-23/vuejs.jpg
 Người dùng đăng nhập: `http://project1.dev/admin/`
 
 Admin đăng nhập: `http://project1.dev/user/`
+
+Chúng ta sẽ bắt thiết lập 1 dự án như vậy cho cả môi trường dev lẫn production.
+
+**Yêu cầu**
+
+* Có `node` và `npm` được cài sẵn trên máy, tốt nhất là dùng `nvm`. Bạn có thể tham khảo link cài nvm ở [đây](https://github.com/creationix/nvm):
+* Có `vue cli`: `npm install -g vue-cli`
+* Thư mục giả định chứa dự án: `~/Code/project1`
+
+
+## Bước 1: Khởi tạo khung dự án đơn giản nhất Vue bằng Vue cli
+
+```bash
+cd ~/Code/projec1
+vue init webpack-simple client
+cd client
+npm install
+```
+
+Trả lời hết các câu hỏi trên và bạn đã có 1 khung dự án Vue sẵn sàng hoạt động
