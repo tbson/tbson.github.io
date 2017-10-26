@@ -63,4 +63,4 @@ let a = 1, b = 2;
 
 Code ngắn và rõ ràng là ưu điểm của phép gán Destructuring. Phép gán này giúp cho các lập trình viên không phải viết nhiều code nhưng code vẫn rõ ràng sạch đẹp nên sẽ tiết kiệm được thời gian và sức lực.
 
-**Nguồn:** (https://hackernoon.com/what-you-should-know-about-assignment-destructuring-in-es6-d049c84ad95a)[https://hackernoon.com/what-you-should-know-about-assignment-destructuring-in-es6-d049c84ad95a]
+**Nguồn:** [https://hackernoon.com/what-you-should-know-about-assignment-destructuring-in-es6-d049c84ad95a](https://hackernoon.com/what-you-should-know-about-assignment-destructuring-in-es6-d049c84ad95a)
