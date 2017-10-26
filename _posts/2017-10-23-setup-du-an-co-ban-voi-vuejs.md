@@ -32,4 +32,13 @@ cd client
 npm install
 ```
 
-Trả lời hết các câu hỏi trên và bạn đã có 1 khung dự án Vue sẵn sàng hoạt động
+Chạy thử:
+
+```bash
+npm run dev
+```
+
+Trả lời hết các câu hỏi trên và bạn đã có 1 khung dự án Vue sẵn sàng hoạt động tại: `http://127.0.0.1:8080`
+
+Bước 2: Dùng domain thay vì IP hoặc localhost và bỏ phần port đi
+
