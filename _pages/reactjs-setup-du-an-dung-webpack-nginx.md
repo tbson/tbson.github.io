@@ -417,7 +417,7 @@ server {
 
 Thử lại với địa chỉ: `http://reactspa.dev/admin` hoặc `http://reactspa.dev/user`
 
-Bạn có thể sử dụng branch `son/setup-du-an-dung-webpack-nginx` để dùng source code.
+Bạn có thể sử dụng branch `son/setup-du-an-dung-webpack-nginx` để dùng source code (Xem bài viết [này](/reactjs/) để biết chi tiết).
 
 <-- [Bài viết trước](/reactjs/)
  ...
