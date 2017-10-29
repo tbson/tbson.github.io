@@ -19,4 +19,20 @@ subtitle: Xây dựng dự án SPA dùng React từ các bước đầu tiên
 10. Gọi API sử dụng fetch
 11. Unit test
 
+Mỗi bài viết sẽ có 1 branch source code tương ứng.
 
+Bạn có thể làm lần đầu thông qua các bước sau:
+
+```bash
+git clone https://github.com/tbson/react-spa.git
+yarn
+git checkout son/setup-du-an-dung-webpack-nginx
+yarn start
+```
+
+Đối với các lần sau bạn chỉ cần checkout branch tương ứng
+
+```bash
+git checkout son/setup-du-an-dung-webpack-nginx
+yarn start
+```
