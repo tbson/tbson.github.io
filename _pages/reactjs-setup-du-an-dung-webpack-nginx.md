@@ -421,4 +421,4 @@ Bạn có thể sử dụng branch `son/setup-du-an-dung-webpack-nginx` để d�
 
 <-- [Bài viết trước](/reactjs/)
  ...
-Bài viết tiếp theo -->
+[Bài viết tiếp theo](/reactjs-cac-khai-niem-co-ban-ve-es6/) -->
