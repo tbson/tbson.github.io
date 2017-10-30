@@ -8,7 +8,7 @@ subtitle: Xây dựng dự án SPA dùng React từ các bước đầu tiên
 ## Các chủ đề chính
 
 1. [Setup dự án dùng webpack / nginx](/reactjs-setup-du-an-dung-webpack-nginx/)
-2. Các khái niệm cơ bản về Es6
+2. [Các khái niệm cơ bản về Es6](/reactjs-cac-khai-niem-co-ban-ve-es6/)
 3. Các khái niệm cơ bản của React
 4. Sử dụng Redux
 5. Sử dụng React router / React router redux
