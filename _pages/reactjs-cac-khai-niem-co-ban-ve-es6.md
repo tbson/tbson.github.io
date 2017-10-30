@@ -8,7 +8,7 @@ subtitle: Giới thiệu các tính năng trong ES6 thường được sử dụ
 
 ES6 hay ECMAScript 6 / ECMAScript 2015 là phiên bản mới được sử dụng rộng rãi của ECMAScript (Javascript tuân theo chuẩn này).
 
-Phiên bản này cung cấp rất nhiều tính năng mới rất tiện dụng. Các tính năng mới được đưa vào rất nhiều. Trong bài viết này mình chỉ giới thiệu vài tính năng được sử dụng thường xuyên.
+Phiên bản này cung cấp rất nhiều tính năng mới rất tiện dụng. Trong bài viết này mình chỉ giới thiệu vài tính năng được sử dụng thường xuyên.
 
 ## Hằng (constant)
 ```javascript
