@@ -57,7 +57,7 @@ Tham khảo bải viết về [phép gán destructuring](/2017-10-26-es6-destruc
 Nếu bạn đã quen dùng PHP thì sẽ không lạ gì với các biểu thức dạng này:
 
 ```php
-<php
+<?php
 $var1 = 'hello';
 $var2 = "$var1 world"; // hello world
 ```
