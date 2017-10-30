@@ -20,12 +20,12 @@ Hằng giúp tạo các biến không thể thay đổi giá trị (immutable va
 
 ```javascript
 function varTest() {
-    let x = 1;
+    let x = 1
     if (true) {
-        let x = 2;
-        console.log(x);  // 2
+        let x = 2
+        console.log(x)  // 2
     }
-    console.log(x);  // 1
+    console.log(x)  // 1
 }
 ```
 
@@ -37,14 +37,14 @@ Biến giới hạn phạm vi là 1 bước tiến lớn của JS, được khuy
 ## Arrow (Fat Arrow) function
 
 ```javascript
-let odds  = evens.map(v => v + 1);
+let odds  = evens.map(v => v + 1)
 ```
 
 Tương đương với
 
 ```javascript
 let odds  = evens.map(function(v){
-    return (v + 1);
+    return (v + 1)
 });
 ```
 
@@ -66,7 +66,7 @@ Giờ đây JS đã có tính năng tương tự
 
 ```javascript
 let customer = { name: "hello" }
-let message = `${customer.name} world`;
+let message = `${customer.name} world`
 ```
 
 Trong các tính năng trên, const, let và fat arrow được sử dụng nhiều nhất.
