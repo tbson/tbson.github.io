@@ -32,7 +32,7 @@ function varTest() {
 Trong ví dụ trên, biến `x` bên ngoài và trong block `if` được xem là 2 biến khác nhau nếu khai báo biến dùng `let`.
 Nếu dùng `var` khai báo biến thì 2 biến `x` trên được xem là 1 biến và giá trị in ra tất cả bằng 2.
 
-Biến giới hạn phạm vi là 1 bước tiến lớn của JS, chúng giúp cho việc sử dụng biến và debug dễ dàng hơn khi ta biết được phạm vi hoạt động của từng biến một cách dễ dàng.
+Biến giới hạn phạm vi là 1 bước tiến lớn của JS, được khuyến cáo sử dụng thay thế `var`, chúng giúp cho việc sử dụng biến và debug dễ dàng hơn khi ta biết được phạm vi hoạt động của từng biến một cách dễ dàng.
 
 ## Arrow (Fat Arrow) function
 
@@ -65,8 +65,8 @@ $var2 = "$var1 world"; // hello world
 Giờ đây JS đã có tính năng tương tự
 
 ```javascript
-var customer = { name: "hello" }
-var message = `${customer.name} world`;
+let customer = { name: "hello" }
+let message = `${customer.name} world`;
 ```
 
 Trong các tính năng trên, const, let và fat arrow được sử dụng nhiều nhất.
