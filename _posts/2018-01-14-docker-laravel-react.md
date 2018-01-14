@@ -2,7 +2,7 @@
 layout: post
 title: Docker cho môi trường phát triển Laravel và React
 subtitle: Dùng cho dự án SPA dùng React, Laravel làm API
-bigimg: /img/posts/2017-10-26/es6-destructuring.jpg
+bigimg: /img/posts/2018-01-14/docker-laravel-react.jpeg
 share-img: /img/posts/2018-01-14/docker-laravel-react.jpeg
 ---
 
