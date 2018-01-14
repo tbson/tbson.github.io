@@ -307,6 +307,12 @@ Nếu cần import file SQL vào db:
 docker exec -i project1_db psql -U docker docker < file_path.sql
 ```
 
+Hoặc tạo db mới để test:
+
+```
+docker exec -it project1_db createdb -U docker docker_test
+```
+
 Với `docker` đầu tiên là tên user và `docker` thứ 2 là tên db được quy định trong `project1_db`
 
 Tắt: `~/code/project1/down`
