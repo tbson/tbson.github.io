@@ -49,20 +49,27 @@ Install `localca.pem` vào máy
 Sau đây là các bước install trên Mac
 
 Mở Keychain app
+
 Vào > Import Items...
+
 Chọn private key file (localca.pem)
+
 Tìm common name tương ứng
 
 ![Tìm common name](/img/posts/2018-01-16/step1.png)
 
 Chọn root certificate trong danh sách
+
 Mở rộng mục Trust
+
 Đổi mục `When using this certificate:` Chọn `Always Trust`
 
 ![Tìm common name](/img/posts/2018-01-16/step2.png)
 
 Đóng cửa sổ certificate
+
 Hệ thống sẽ hỏi mật khẩu máy hoặc bắt quét vân tay
+
 Done!
 
 Sau đó ta đã có thể dùng ceftificate được tạo ra:
