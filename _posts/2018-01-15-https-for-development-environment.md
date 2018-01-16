@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setup HPPS cho môi trường dev
+title: Setup HTTPS cho môi trường dev
 subtitle: Để môi trường phát triển gần với môi trường production nhất
 bigimg: /img/posts/2018-01-16/https.png
 share-img: /img/posts/2018-01-16/https.png
