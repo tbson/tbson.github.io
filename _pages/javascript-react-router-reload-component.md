@@ -1,9 +1,10 @@
 ---
-layout: post
+permalink: "/javascript-react-router-reload-component/"
+layout: page
 title: React router reload component
 subtitle: Giải quyết vấn đề load lại component khi di chuyển giữa các URL dùng chung component
-bigimg: /img/posts/2018-05-18/react-router.jpeg
-share-img: /img/posts/2018-05-18/react-router.jpeg
+bigimg: /img/pages/javascript/react-router.jpeg
+share-img: /img/pages/javascript/react-router.jpeg
 ---
 
 
@@ -43,4 +44,3 @@ componentDidUpdate(prevProps: Props, prevState: State) {
     }
 }
 ```
-
