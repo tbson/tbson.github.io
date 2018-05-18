@@ -22,8 +22,9 @@ Khi người dùng di chuyển giữa 2 URL như:
 /danh-sach-bai-viet/thong-bao
 ```
 
-Thì khi qua link `thong-bao` api call ở `componentDidMount` sẽ không chạy.
-Chúng ta không thể trực tiếp gọi API ở `componentDidUpdate` mà không có điều kiện ràng buộc gì. Vì khi cập nhật state ở `componentDidUpdate`, event gọi `componentDidUpdate` sẽ được bắn ra và chúng ta bị rơi vào 1 vòng lặp vô tận.
+Thì khi qua link `thong-bao`, api call ở `componentDidMount` sẽ không chạy.
+
+Chúng ta không thể trực tiếp gọi API ở `componentDidUpdate` mà không có điều kiện ràng buộc gì, vì khi cập nhật state ở `componentDidUpdate`, event gọi `componentDidUpdate` sẽ được kích hoạt. Điều đó sẽ đẩy chúng ta bị rơi vào 1 vòng lặp vô tận.
 
 Để giải quyết vấn đề này thì chúng ta chỉ cần so sánh URL mới và URL trước đó, nếu không khớp nhau thì gọi lại, điều đó sẽ ngăn chặn vòng lặp vô tận:
 
