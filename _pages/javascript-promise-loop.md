@@ -31,8 +31,8 @@ const promises = [
     new Promise(resolve => setTimeout(resolve, 5000, 'Case 2')),
     new Promise(resolve => setTimeout(resolve, 100, 'Case 3')),
 ];
-for (let promise of promises) {
-    console.log(await promise);
+for (let result of promises) {
+    console.log(await result);
 }
 ```
 
