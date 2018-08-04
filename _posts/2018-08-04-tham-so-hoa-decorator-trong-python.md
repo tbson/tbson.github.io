@@ -51,9 +51,13 @@ greeting = upperParams(greeting)
 Như các diễn giải này:
 
 `upperParams` là 1 function nhận input là 1 function, trong trường hợp này là `greeting` function.
+
 Nó trả về hàm `inner` nhận bất kì tham số tuần tự hoặc tham số keyword nào.
+
 Do đó, tham số được truyền vào sau cùng khi chạy `greeting('world')` chính xác được truyền vào `inner` function.
+
 `inner` function convert tất cả tham số tuần tự thành chữ in hoa và đưa hết vào input function rồi return function này.
+
 kết quả trả về là chuỗi `hello WORLD` như ta thấy.
 
 Vậy có những trường hợp ta không cần upper thì sao? Có 2 cách:
@@ -113,7 +117,7 @@ greeting = upperParamsCondition(False)(greeting)
 
 Đó là sự khác nhau cơ bản của decorator thường và decorator được tham số hoá.
 
-Decorator thường sẽ nhận input function để xử lý.
-Decorator được tham số hoá sẽ nhận tham số của riêng nó, trả về 1 decorator, decorator này mới thực sự nhận input function để xử lý.
+- Decorator thường sẽ nhận input function để xử lý.
+- Decorator được tham số hoá sẽ nhận tham số của riêng nó, trả về 1 decorator, decorator này mới thực sự nhận input function để xử lý.
 
 DONE
