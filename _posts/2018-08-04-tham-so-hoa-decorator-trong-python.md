@@ -78,12 +78,16 @@ Chạy thử:
 ```python
 @upperParamsCondition()
 def greeting2(name):
-    greeting(name)
+    print('hello {}'.format(name))
+
+greeting2('world')
 # kết quả: hello WORLD
 
 @upperParamsCondition(False)
 def greeting3(name):
-    greeting(name)
+    print('hello {}'.format(name))
+
+greeting3('world')
 # kết quả: hello world
 ```
 
@@ -92,16 +96,16 @@ Cắt nghĩa khi không dùng synstatic sugar:
 
 ```python
 @upperParamsCondition(False)
-def greeting2(name):
-    greeting(name)
+def greeting(name):
+    print('hello {}'.format(name))
 ```
 
 Tương đương với:
 
 ```python
-def greeting2(name):
+def greeting(name):
     print('hello {}'.format(name))
-greeting = upperParamsCondition(False)(greeting2)
+greeting = upperParamsCondition(False)(greeting)
 ```
 
 `upperParamsCondition` thực chất là 1 decorator factory. Nó trả về 1 decorator (trong trường hợp này là `deco` function) để nhận input function sau khi nhận input của riêng nó.
