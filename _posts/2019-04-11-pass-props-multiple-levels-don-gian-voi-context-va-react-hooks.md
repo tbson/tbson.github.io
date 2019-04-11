@@ -2,8 +2,6 @@
 layout: post
 title: Pass props multiple levels đơn giản với Context và React Hooks
 subtitle: React Hook useContext đã làm cho việc sử dụng Context trở nên đơn giản và gọn gàng đi rất nhiều.
-bigimg: /img/posts/2019-04-11/context-vs-redux.png
-share-img: /img/posts/2019-04-11/context-vs-redux.png
 ---
 
 Từ khi React cho ra phiên bản stable của `Context` để giải quyết vấn đề truyền props từ component cha xuống nhiều tầng component con:
