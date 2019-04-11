@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pass props multiple levels đơn giản với context và React Hooks
+title: Pass props multiple levels đơn giản với Context và React Hooks
 subtitle: React Hook useContext đã làm cho việc sử dụng Context trỡ nên đơn giản và gọn gàng đi rất nhiều.
 bigimg: /img/posts/2019-04-11/context-vs-redux.png
 share-img: /img/posts/2019-04-11/context-vs-redux.png
