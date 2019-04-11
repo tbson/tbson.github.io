@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pass props multiple levels đơn giản với Context và React Hooks
-subtitle: React Hook useContext đã làm cho việc sử dụng Context trỡ nên đơn giản và gọn gàng đi rất nhiều.
+subtitle: React Hook useContext đã làm cho việc sử dụng Context trở nên đơn giản và gọn gàng đi rất nhiều.
 bigimg: /img/posts/2019-04-11/context-vs-redux.png
 share-img: /img/posts/2019-04-11/context-vs-redux.png
 ---
@@ -34,7 +34,7 @@ const Component2 = ({importantProps}) => (
 ```
 
 Thành:
-
+{% raw  %}
 ```javascript
 import * as React from 'react';
 import {createContext} from 'react';
@@ -44,7 +44,7 @@ export () => {
     const [importantProps, setImportantProps] = useState("")
     // changing importantProps somewhere...
     return (
-        <Context.Provider value={\{importantProps\}}>
+        <Context.Provider value={{importantProps}}>
             <Component1 importantProps={importantProps}></Component1>
         </Context>
     )
@@ -62,6 +62,7 @@ const Component2 = () => (
     <Context.Consumer>
 )
 ```
+{% endraw %}
 
 Vấn đề loại bỏ props trung gian đã được giải quyết.
 Nhưng cách làm này đã phát sinh một vấn đề khác ít quan trọng hơn: Nó dùng kỹ thuật `render props`.
