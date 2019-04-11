@@ -44,7 +44,7 @@ export () => {
     const [importantProps, setImportantProps] = useState("")
     // changing importantProps somewhere...
     return (
-        <Context.Provider value={{importantProps}}>
+        <Context.Provider value={\{importantProps\}}>
             <Component1 importantProps={importantProps}></Component1>
         </Context>
     )
