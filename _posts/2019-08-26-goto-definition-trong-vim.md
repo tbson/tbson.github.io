@@ -8,7 +8,7 @@ Vim (Neovim) là một text editor, không phải là 1 IDE nên không hỗ tr�
 
 Goto definition trong vim chỉ được hỗ trợ trong từng file hoặc buffer, việc nhảy tới 1 file khác phải phụ thuộc vào 1 tool bên ngoài, tool đó là `ctags`
 
-Nhưng ctags có 1 vấn đề là: đây là 1 tool khá cũ và ít được cập nhật nên mặc định nó sẽ bỏ sót rất nhiều keywords trong các file js có dùng các cấu trúc hiện đại như Class.
+Nhưng `ctags` có 1 vấn đề là: đây là 1 tool khá cũ và ít được cập nhật nên mặc định nó sẽ bỏ sót rất nhiều keywords trong các file js có dùng các cấu trúc hiện đại như Class.
 
 Để khắc phục điều đó, cộng đồng mã nguồn mở có vài dự án để khắc phục: dùng regex trong file `.ctags` ví dụ như repo (romainl/ctags-patterns-for-javascript)[https://github.com/romainl/ctags-patterns-for-javascript]
 
@@ -164,10 +164,10 @@ popMessage	client/src/utils/helpers/Tools.js	/^    static popMessage(description
 Phần đầu tiên là tên function/variable, phần tiếp theo là tên file mà function đó được định nghĩa, phần cuối là preview.
 
 Để tới nơi định nghĩa: Dùng tổ hợp phím `Ctrl + ]`
+
 Để quay về: Dùng tổ hợp phím `Ctrl + o`
 
 Demo:
 
 ![ctags](/img/posts/2019-08-26/ctags.gif)
 
-DONE
