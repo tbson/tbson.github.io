@@ -10,7 +10,7 @@ Goto definition trong vim chỉ được hỗ trợ trong từng file hoặc buf
 
 Nhưng `ctags` có 1 vấn đề là: đây là 1 tool khá cũ và ít được cập nhật nên mặc định nó sẽ bỏ sót rất nhiều keywords trong các file js có dùng các cấu trúc hiện đại như Class.
 
-Để khắc phục điều đó, cộng đồng mã nguồn mở có vài dự án để khắc phục: dùng regex trong file `.ctags` ví dụ như repo (romainl/ctags-patterns-for-javascript)[https://github.com/romainl/ctags-patterns-for-javascript]
+Để khắc phục điều đó, cộng đồng mã nguồn mở có vài dự án để khắc phục: dùng regex trong file `.ctags` ví dụ như repo [romainl/ctags-patterns-for-javascript](https://github.com/romainl/ctags-patterns-for-javascript)
 
 Ý tưởng của repo này rất đơn giản: cung cấp 1 loạt regex để `ctags` thông minh hơn trong việc index các file js hiện đại.
 
