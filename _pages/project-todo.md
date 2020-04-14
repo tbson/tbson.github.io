@@ -33,8 +33,8 @@ Based on requirements, we get some decisitions:
 
 # Implementation steps
 
-1. [Setting up project using start-react-native and some dependencies.](/da-todo-setting-up/)
-2. [Making layout.](/da-todo-making-layout)
+1. [Setting up project using start-react-native and some dependencies.](/project-todo-setting-up.md/)
+2. [Making layout.](project-todo-making-layout)
 3. Using PouchDB to store data.
 4. Syncing data.
 5. Testing.
